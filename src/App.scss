@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Bahnschrift';
+  src: local('Bahnschrift'),
+       url('./assets/fonts/BAHNSCHRIFT.TTF') format('truetype'), /* Super Modern Browsers */
+}
+
+@font-face {  
+  font-family: 'Cygnito Mono';
+  src: local('Cygnito Mono'), local('CygnitoMono'),
+       url('./assets/fonts/Cygnito Mono.otf') format('truetype'), /* Super Modern Browsers */
+}
+
+.App {
+  text-align: center;
+}
+
