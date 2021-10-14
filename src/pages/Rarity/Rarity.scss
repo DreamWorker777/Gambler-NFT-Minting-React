@@ -107,14 +107,14 @@
             position: absolute;
             width: 8%;
             top: calc(-4vw);
-            right: calc(8vw);
+            right: calc(20vw);
         }
 
         &__title {
             font-family: Bank Sans EF CY;
             font-style: normal;
             font-weight: 100;
-            font-size: 3vw;
+            font-size: 2.5vw;
             line-height: 1vw;
 
             color: white;
@@ -145,12 +145,16 @@
 
             img {
                 width: 40vw;
+
+                position: absolute;
+                left: 0;
+                top: 0;
             }
 
             &__hair {
                 position: absolute;
-                left: 6vw;
-                top: 3vw;
+                left: 8vw;
+                top: 5vw;
             }
 
             &__eyewear {
@@ -159,9 +163,15 @@
                 top: 12vw;
             }
 
+            &__biomods {
+                position: absolute;
+                right: 4vw;
+                top: 20vw;
+            }
+
             &__body {
                 position: absolute;
-                left: 9vw;
+                left: 7vw;
                 top: 21vw;
             }
 

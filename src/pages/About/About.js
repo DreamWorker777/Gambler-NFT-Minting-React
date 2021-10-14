@@ -3,7 +3,6 @@ import React, { useRef } from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
-
 import './About.scss';
 import back from '../../assets/img/bg/1.png';
 import tag from '../../assets/img/tags/1.png';
@@ -35,7 +34,7 @@ const SlideShow = () => {
     const mouseWheelEvent = ( ev ) => {
         // ev.preventDefault();
         const y = ev.deltaY;
-
+        console.log(slideRef.current);
         if( y > 0 )
             slideRef.current.goNext();
         else
