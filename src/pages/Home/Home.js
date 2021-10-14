@@ -109,8 +109,6 @@ const Home = () => {
             <TopButtons />
             <Main />
             <DateShow />
-            
-            
         </div>
     );
 }

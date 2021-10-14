@@ -1,0 +1,413 @@
+.rarity {
+    &__content {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        background: #9BE7A9;
+
+        &__tag {
+            position: absolute;
+            width: 18%;
+            top: calc(-2vw);
+            right: calc(8vw);
+        }
+
+        &__back {
+            width: 40%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__desc {
+            width: 60%;
+
+            div {
+                padding: 8vw;
+                padding-right: 16vw;
+            }
+
+            &__title {
+                font-family: Vermin Vibes;
+                font-weight: normal;
+                font-size: 80px;
+                line-height: 40px;
+                /* identical to box height, or 88% */
+                
+                
+                color: #4F3E72;
+            }
+
+            &__first {
+                font-family: Bank Sans EF CY;
+                
+                font-weight: 300;
+                font-size: 23px;
+                line-height: 30px;
+            }
+
+            &__second {
+                font-family: Bank Sans EF CY;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 21px;
+                line-height: 30px;
+            }
+
+            p {
+                font-style: normal;
+                text-transform: uppercase;
+
+                color: #2B2656;
+
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            button {
+                font-family: Bank Sans EF CY;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 21px;
+                line-height: 17px;
+
+                color: white;
+                outline: unset;
+                border: unset;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 12px 18px;
+
+                background: #2B2656;
+                
+                &:hover, &:active {
+                    background: white;
+                    color: #2B2656;
+                }
+            }
+        }
+    }
+
+    &__explore {
+        position: relative;
+        background: #F1549E;
+        margin-top: -5px;
+        
+        div {
+            padding: 8vw;
+            padding-top: 3vw;
+            padding-bottom: 0;
+        }
+
+        &__tag {
+            position: absolute;
+            width: 8%;
+            top: calc(-4vw);
+            right: calc(8vw);
+        }
+
+        &__title {
+            font-family: Bank Sans EF CY;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 3vw;
+            line-height: 1vw;
+
+            color: white;
+        }
+
+        &__charac {
+            padding: 0 !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div {
+                padding: 0;
+                position: relative;
+
+                p {
+                    font-family: BigBang;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 1.4vw;
+                    line-height: 127.2%;
+
+                    letter-spacing: 0.1em;
+
+                    color: #FFFFFF;
+                }
+            }
+
+            img {
+                width: 40vw;
+            }
+
+            &__hair {
+                position: absolute;
+                left: 6vw;
+                top: 3vw;
+            }
+
+            &__eyewear {
+                position: absolute;
+                right: 0;
+                top: 12vw;
+            }
+
+            &__body {
+                position: absolute;
+                left: 9vw;
+                top: 21vw;
+            }
+
+            &__clothing {
+                position: absolute;
+                right: -3vw;
+                bottom: 6vw;
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+    .rarity {
+        &__content {
+            &__back {
+                width: 100%;
+                overflow: hidden;
+                height: calc(77vw);
+            }
+
+            &__desc {
+                width: 100%;
+
+                div {
+                    padding: 5vw;
+                }
+
+                &__title {
+                    font-size: 25px;
+                    line-height: 10px;
+                }
+    
+                &__first {
+                    font-size: 10px;
+                    line-height: 17px;
+                }
+    
+                &__second {
+                    font-size: 9px;
+                    line-height: 17px;
+                }
+    
+                p {
+                    padding-top: 1px;
+                    padding-bottom: 1px;
+                }
+    
+                button {
+                    font-size: 9px;
+                    line-height: 10px;
+    
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 500px) and (max-width: 768px) {
+    .rarity {
+        &__content {
+            &__back {
+                width: 100%;
+                overflow: hidden;
+                height: calc(77vw);
+            }
+
+            &__desc {
+                width: 100%;
+
+                div {
+                    padding: 5vw;
+                }
+
+                &__title {
+                    font-size: 35px;
+                    line-height: 10px;
+                }
+    
+                &__first {
+                    font-size: 15px;
+                    line-height: 17px;
+                }
+    
+                &__second {
+                    font-size: 13px;
+                    line-height: 17px;
+                }
+    
+                p {
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                }
+    
+                button {
+                    font-size: 13px;
+                    line-height: 10px;
+    
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 768px) and (max-width: 992px) {
+    .rarity {
+        &__content {
+            &__desc {
+                &__title {
+                    font-size: 35px;
+                    line-height: 40px;
+                }
+    
+                &__first {
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+    
+                &__second {
+                    font-size: 10px;
+                    line-height: 15px;
+                }
+    
+                p {
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                }
+    
+                button {
+                    font-size: 10px;
+                    line-height: 10px;
+    
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 992px) and (max-width: 1200px) {
+    .rarity {
+        &__content {
+            &__desc {
+                &__title {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+    
+                &__first {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+    
+                &__second {
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+    
+                p {
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+    
+                button {
+                    font-size: 13px;
+                    line-height: 13px;
+    
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .rarity {
+        &__content {
+            &__desc {
+                &__title {
+                    font-size: 50px;
+                    line-height: 50px;
+                }
+    
+                &__first {
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+    
+                &__second {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+    
+                p {
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                }
+    
+                button {
+                    font-size: 16px;
+                    line-height: 13px;
+    
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1700px) {
+    .rarity {
+        &__content {
+            &__desc {
+                &__title {
+                    font-size: 70px;
+                    line-height: 60px;
+                }
+    
+                &__first {
+                    font-size: 23px;
+                    line-height: 27px;
+                }
+    
+                &__second {
+                    font-size: 19px;
+                    line-height: 23px;
+                }
+    
+                p {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+    
+                button {
+                    font-size: 20px;
+                    line-height: 15px;
+    
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+}

@@ -10,7 +10,19 @@
        url('./assets/fonts/Cygnito Mono.otf') format('truetype'), /* Super Modern Browsers */
 }
 
+@font-face {  
+  font-family: 'Bank Sans EF CY';
+  src: local('Bank Sans EF CY'),
+       url('./assets/fonts/Bank Sans EF CY.otf') format('truetype'), /* Super Modern Browsers */
+}
+
+@font-face {  
+  font-family: 'Vermin Vibes';
+  src: local('Vermin Vibes'), local('VerminVibes')
+       url('./assets/fonts/vermin-vibes/vermin_vibes.ttf') format('truetype'), /* Super Modern Browsers */
+}
+
 .App {
-  text-align: center;
+  background: #191919;
 }
 
