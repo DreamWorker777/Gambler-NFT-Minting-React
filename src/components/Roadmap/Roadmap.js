@@ -101,7 +101,7 @@ const SlideShow = () => {
 
 export const RoadMap = () => {
     return (
-        <div className="roadmap">
+        <div className="roadmap" id="roadmap">
             <div className="roadmap__content">
                 <img alt="tag" className="roadmap__content__tag" src={tag}></img>
                 <div className="roadmap__content__desc">

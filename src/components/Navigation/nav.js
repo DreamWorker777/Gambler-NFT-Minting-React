@@ -1,14 +1,29 @@
 import './nav.scss';
+import { Link } from 'react-scroll'
 
 const NavBar = () => {
+    const menu = [
+        "team", "roadmap", "rarity", "about", "home"
+    ];
+
     return (
-        <ul className="navBar">
-            <li className="navBar__item"><button className="navBar__item__btn"> TEAM </button></li>
-            <li className="navBar__item"><button className="navBar__item__btn"> ROADMAP </button></li>
-            <li className="navBar__item"><button className="navBar__item__btn"> RARITY </button></li>
-            <li className="navBar__item"><button className="navBar__item__btn"> ABOUT </button></li>
-            <li className="navBar__item active"><button className="navBar__item__btn"> HOME </button></li>
-        </ul>
+        <div className="navBar">
+            {
+                menu.map((item) => (
+                    <Link
+                        activeClass="active" 
+                        smooth={true} 
+                        duration={500} 
+                        spy={true} 
+                        className="navBar__item"
+                        to={ item }
+                        offset={ 5 }
+                    >
+                        { item.toUpperCase() }
+                    </Link>
+                ))
+            }
+        </div>
     )
 }
 

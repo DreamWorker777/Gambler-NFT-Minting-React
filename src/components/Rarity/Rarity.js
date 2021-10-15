@@ -99,7 +99,7 @@ const Rarity = () => {
     const [showExplore, setShowExplore] = useState(false);
 
     return (
-        <div className="rarity">
+        <div className="rarity" id="rarity">
             <div className="rarity__content">
                 <img alt="tag" className="rarity__content__tag" src={tag}></img>
 

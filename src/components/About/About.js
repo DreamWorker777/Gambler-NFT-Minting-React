@@ -54,7 +54,7 @@ const SlideShow = () => {
 
 const About = () => {
     return (
-        <div className="about">
+        <div className="about" id="about">
             <img alt="background" className="about__back" src={back}></img>
             <div className="about__content">
                 <img alt="tag" className="about__content__tag" src={tag}></img>

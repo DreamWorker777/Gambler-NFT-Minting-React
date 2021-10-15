@@ -7,42 +7,37 @@ ul {
 .navBar {
     position: fixed;
     transform: translate3d(0, -50%, 0);
-    top: 57%;
+    top: 55%;
     z-index: 100;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    left: 0vw;
 
     &__item {
-        margin-bottom: 6vw;
 
-        transform: rotate(-90deg);
+        text-orientation: mixed;
+        writing-mode: vertical-rl;
+        color: white;
+        transform: rotate(180deg);
 
-        &__btn {
-            color: white;
-            outline-style: unset;
-            background-color: transparent;
-            border: unset;
-        
-            font-family: Bahnschrift;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.5vw;
-            line-height: 1.8vw;
-        }
+        padding: 1vw;
+        margin: 1vw;
 
+        font-family: Bahnschrift;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5vw;
+        line-height: 1.8vw;
+    
         &.active {
             background-color: white;
-
-            .navBar__item__btn {
-                color: black;
-            }
+            color: black;
         }
 
         &:hover {
             background-color: white;
-
-            .navBar__item__btn {
-                color: black;
-            }
+            color: black;
         }
     }
 }

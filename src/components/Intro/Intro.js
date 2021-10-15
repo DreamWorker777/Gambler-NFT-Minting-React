@@ -59,7 +59,7 @@ const DateShow = () => {
 
 const Intro = () => {
     return (
-        <div className="intro">
+        <div className="intro" id="home">
             <Main />
             <DateShow />
         </div>

@@ -7,7 +7,7 @@ import icon2 from '../../assets/img/icons/topIcon2.png';
 
 export const Team = () => {
     return (
-        <div className="team">
+        <div className="team" id="team">
             <div className="team__members">
                 <img alt="tag" className="team__members__tag" src={tag}></img>
                 <div className="team__members__content">
