@@ -1,0 +1,87 @@
+.join {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    &__popup {
+        position: absolute;
+        z-index: 100;
+        width: 46vw;
+        height: 23vw;
+        background: #1F254E;
+        top: 13vw;
+        left: 9vw;
+
+        div {
+            padding: 2vw;
+            padding-top: 3vw;
+        }
+
+        &__title {
+            font-family: Vermin Vibes;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2.5vw;
+            line-height: 2.4vw;
+            /* identical to box height, or 93% */
+
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+            margin-block-end: 1vw;
+            margin-block-start: 1vw;
+        }
+
+        &__desc {
+            font-family: Bank Sans EF CY;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.2vw;
+            line-height: 2vw;
+            /* or 175% */
+
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+        }
+
+        &__button {
+            outline: unset;
+            border: unset;
+
+            background: #FFCF96;
+            color: #1F254E;
+
+            font-family: Bank Sans EF CY;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.2vw;
+            line-height: 2vw;
+            /* identical to box height, or 175% */
+
+            text-transform: uppercase;
+
+            color: #1F254E;
+                        
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 1vw;
+            margin-top: 2vw;
+            cursor: pointer;
+
+            img {
+                position: unset;
+                width: 2vw;
+                margin-right: 1vw;
+            }
+
+            &:hover {
+                background-color: #ffe9ce;
+            }
+        }
+    }
+}

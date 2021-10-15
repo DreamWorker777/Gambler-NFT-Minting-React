@@ -1,0 +1,154 @@
+.topMenu {
+    position: relative;
+    height: 7vw;
+    z-index: 200;
+
+    &__logo {
+        position: absolute;
+        left: calc(4.5vw);
+        top: calc(2.5vw);
+        display: flex;
+        align-items: center;
+
+        &__img {
+            width: calc(1.9vw);
+            margin-right: 7%;
+        }
+
+        &__text {
+            width: calc(13vw);
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        right: calc(3vw);
+        top: calc(2.5vw);
+        display: flex;
+        align-items: center;
+
+        &__walletBtn {
+            font-family: Cygnito Mono;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1vw;
+            line-height: 1.5vw;
+            /* identical to box height */
+        
+            /* WHITTE */
+        
+            color: #FFFFFF;
+        
+            /* Inside Auto Layout */
+        
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        
+            padding: 0.5vw 1vw;
+            outline-style: unset;
+            border: unset;
+        
+            background-color: rgb(25, 25, 25) !important;
+            border: 1px solid #FFFFFF;
+            margin-right: calc(3vw);
+
+            &:hover {
+                cursor: pointer;
+                border: 1px solid #000000;
+                background-color: #FFFFFF !important;
+                color: rgb(25, 25, 25);
+            }
+        }
+
+        &__icons {
+            a {
+                margin-right: calc(1.1vw);
+                margin-left: calc(1.1vw);
+
+                img {
+                    width: calc(1.9vw);
+                }
+            }
+        }
+
+        &__dropDownMenu {
+            position: relative;
+            display: none;
+
+            &:hover {
+                .topMenu__menu__dropDownMenu__content {
+                    display: block;
+                }
+            }
+
+            &__icon {
+                border: none;
+                cursor: pointer;
+                width: calc(3vw);
+            }
+
+            &__content {
+                display: none;
+                position: absolute;
+                background-color: black;
+                min-width: 20vw;
+                z-index: 100;
+                right: 0;
+
+                a {
+                    font-size: 2vw;
+                    color: white;
+                    padding: 1.6vw 2vw;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 481px) {
+    .topMenu {
+        &__logo {
+            &__img {
+                width: calc(4vw);
+            }
+
+            &__text {
+                display: none;
+            }
+        }
+
+        &__menu {    
+            &__icons {
+                display: none;
+            }
+
+            &__dropDownMenu {
+                display: flex;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 481px) and (max-width: 768px) {
+    .topMenu {
+        &__menu {
+            &__icons {
+                display: none;
+            }
+
+            &__dropDownMenu {
+                display: flex;
+            }
+        }
+    }
+}

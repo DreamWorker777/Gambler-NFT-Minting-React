@@ -1,53 +1,8 @@
-import {NotificationManager} from 'react-notifications';
-
 import './Home.scss';
 
-import logo from '../../assets/logo.png';
-import logoText from '../../assets/logoText.png';
-import topIcon1 from '../../assets/img/icons/topIcon1.png';
-import topIcon2 from '../../assets/img/icons/topIcon2.png';
-import topIcon3 from '../../assets/img/icons/topIcon3.png';
 import character from '../../assets/img/charac/1.png';
 import textPng1 from '../../assets/img/homeText1.png';
 import textPng2 from '../../assets/img/homeText2.png';
-import menuIcon from '../../assets/img/icons/menu.png';
-
-const TopLogo = () => {
-    return (
-        <div className="home__logo">
-            <img src={logo} className="home__logo__img" alt="logo"></img>
-            <img src={logoText} className="home__logo__text" alt="logo"></img>
-        </div>
-    )
-}
-
-const TopButtons = () => {
-    const connectWallet = () => {
-        NotificationManager.info('Sorry, metamask wallet connection is currently unavailable, please comeback on drop day');
-    }
-
-    return (
-        <div className="home__topMenu">
-            <button className="home__topMenu__walletBtn" onClick={ connectWallet } >CONNECT WALLET</button>
-            <div className="home__topMenu__icons">
-                <a href="#javascript;"><img src={ topIcon1 } alt="logo"></img></a>
-                <a href="#javascript;"><img src={ topIcon2 } alt="logo"></img></a>
-                <a href="#javascript;"><img src={ topIcon3 } alt="logo"></img></a>
-            </div>
-
-            <div className="home__topMenu__dropDownMenu">
-                <img src={menuIcon} className="home__topMenu__dropDownMenu__icon" alt="menu"></img>
-                <div className="home__topMenu__dropDownMenu__content">
-                    <a href="#javascript;">HOME</a>
-                    <a href="#javascript;">ABOUT</a>
-                    <a href="#javascript;">RARITY</a>
-                    <a href="#javascript;">ROADMAP</a>
-                    <a href="#javascript;">TEAM</a>
-                </div>
-            </div>
-        </div>
-    )
-}
 
 const Main = () => {
     return (
@@ -105,8 +60,6 @@ const DateShow = () => {
 const Home = () => {
     return (
         <div className="home">
-            <TopLogo />
-            <TopButtons />
             <Main />
             <DateShow />
         </div>

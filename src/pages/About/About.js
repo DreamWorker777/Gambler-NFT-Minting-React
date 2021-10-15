@@ -32,9 +32,8 @@ const SlideShow = () => {
     };
 
     const mouseWheelEvent = ( ev ) => {
-        // ev.preventDefault();
         const y = ev.deltaY;
-        console.log(slideRef.current);
+
         if( y > 0 )
             slideRef.current.goNext();
         else

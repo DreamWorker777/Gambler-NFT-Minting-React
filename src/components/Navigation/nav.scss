@@ -13,7 +13,7 @@ ul {
 
     &__item {
         margin-bottom: 6vw;
-        
+
         transform: rotate(-90deg);
 
         &__btn {
@@ -25,9 +25,8 @@ ul {
             font-family: Bahnschrift;
             font-style: normal;
             font-weight: normal;
-            font-size: 20px;
-            line-height: 24px;
-            // height: 50px;
+            font-size: 1.5vw;
+            line-height: 1.8vw;
         }
 
         &.active {
@@ -52,44 +51,5 @@ ul {
 @media (min-width: 0px) and (max-width: 768px) {
     .navBar {
         display: none;
-    }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 768px) and (max-width: 992px) {
-    .navBar {
-        &__item {
-
-            &__btn {
-                font-size: 13px;
-                line-height: 14px;
-            }
-        }
-    }
-}
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 992px) and (max-width: 1200px) {
-    .navBar {
-        &__item {
-
-            &__btn {
-                font-size: 15px;
-                line-height: 17px;
-            }
-        }
-    }
-}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1200px) and (max-width: 1400px) {
-    .navBar {
-        &__item {
-
-            &__btn {
-                font-size: 17px;
-                line-height: 20px;
-            }
-        }
     }
 }

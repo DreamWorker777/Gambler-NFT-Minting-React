@@ -1,0 +1,106 @@
+.team {
+    &__members {
+        position: relative;
+        background: #191919;
+        margin-top: -5px;
+
+        &__tag {
+            position: absolute;
+            width: 15%;
+            top: calc(-7vw);
+            right: calc(20vw);
+        }
+
+        &__content {
+            padding: 8vw;
+            padding-top: 4vw;
+
+            &__title {
+                font-family: Vermin Vibes;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 4vw;
+                line-height: 4vw;
+                /* identical to box height */
+
+
+                /* WHITTE */
+
+                color: #FFFFFF;
+
+                margin-block-start: 1vw;
+                margin-block-end: 1vw;
+            }
+
+            &__desc {
+                font-family: Bank Sans EF CY;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 1.7vw;
+                line-height: 1.7vw;
+
+                /* WHITTE */
+
+                color: #FFFFFF;
+            }
+
+            &__people {
+                display: flex;
+                padding-top: 4vw;
+
+                div {
+                    width: 50%;
+                    padding-right: 5vw;
+
+                    img {
+                        width: 35vw;
+                        height: 34vw;
+                    }
+
+                    a {
+                        display: inline-block;
+                        margin-right: 1vw;
+                    }
+                }
+
+                &__name {
+                    font-family: Bank Sans EF CY;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1.7vw;
+                    line-height: 1.7vw;
+                    /* identical to box height, or 108% */
+
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+                }
+                
+                &__desc {
+                    font-family: Bank Sans EF CY;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1.2vw;
+                    line-height: 1.2vw;
+                    /* or 119% */
+
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+                }
+
+                &__firstIcon {
+                    background: #E35353;
+                    width: 2vw !important;
+                    height: auto !important;
+                }
+
+                &__secondIcon {
+                    background: #7994C0;
+                    width: 2vw !important;
+                    height: auto !important;
+                }
+            }
+        }
+    }
+}

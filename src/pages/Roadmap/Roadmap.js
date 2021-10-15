@@ -75,7 +75,6 @@ const SlideShow = () => {
         indicators: false,
         autoplay: false,
         onChange: () => {
-            console.error(slideRef.current.state.index)
             setTimeout(() => {
                 setCurrentIndex( slideRef.current.state.index );
             }, 100)

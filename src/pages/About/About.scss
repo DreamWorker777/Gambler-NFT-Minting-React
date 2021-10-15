@@ -1,4 +1,7 @@
 .about {
+    position: relative;
+    z-index: 10;
+
     &__back {
         width: 100%;
     }
@@ -22,20 +25,20 @@
             text-align: left;
             
             &__bottom {
-                padding-top: 60px;
+                padding-top: 2vw;
             }
 
             div {
                 padding-left: 8vw;
-                padding-top: 8vw;
+                padding-top: 9.5vw;
             }
 
             p {
-                font-family: Vermin Vibes;
+                font-family: Bank Sans EF CY;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 26px;
-                line-height: 40px;
+                font-size: 1.4vw;
+                line-height: 2vw;
                 /* or 45% */
 
                 text-transform: uppercase;
@@ -45,9 +48,9 @@
                 color: #FFFFFF;
 
                 span {
-                    font-family: Bank Sans EF CY;
+                    font-family: Vermin Vibes;
                     font-weight: 400;
-                    font-size: 100px;
+                    font-size: 4vw;
                 }
             }
         }
@@ -61,6 +64,11 @@
     }
 
     &__slider {
+        background-color: #191919;
+        position: relative;
+        z-index: 11;
+        margin-top: -5px;
+
         padding-top: calc(5vw);
         padding-bottom: calc(5vw);
 
@@ -90,61 +98,24 @@
     }
 }
 
-@media (min-width: 0px) and (max-width: 500px) {
-    .about {
-        &__content {
-            &__desc {
-                width: 93%;
-                &__bottom {
-                    padding-top: 10px;
-                }
-
-                div {
-                    padding-top: 3vw;
-                }
-
-                p {
-                    padding-top: 5px;
-                    padding-bottom: 0px;
-                    font-size: 10px;
-                    line-height: 13px;
-
-                    span {
-                        font-size: 30px;
-                    }
-                }
-            }
-
-            &__pic {
-                width: 70%;
-                margin-left: 20%;
-            }
-        }
-    }
-}
-
 // Medium devices (tablets, 768px and up)
-@media (min-width: 500px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
     .about {
         &__content {
             &__desc {
                 width: 93%;
-                &__bottom {
-                    padding-top: 10px;
-                }
 
                 div {
                     padding-top: 3vw;
+                    padding-bottom: 10vw;
                 }
 
                 p {
-                    padding-top: 5px;
-                    padding-bottom: 0px;
-                    font-size: 13px;
-                    line-height: 20px;
+                    font-size: 3vw;
+                    line-height: 4vw;
 
                     span {
-                        font-size: 36px;
+                        font-size: 6vw;
                     }
                 }
             }
@@ -152,94 +123,6 @@
             &__pic {
                 width: 70%;
                 margin-left: 20%;
-            }
-        }
-    }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 768px) and (max-width: 992px) {
-    .about {
-        &__content {
-            &__desc {
-                &__bottom {
-                    padding-top: 30px;
-                }
-
-                p {
-                    font-size: 13px;
-                    line-height: 20px;
-
-                    span {
-                        font-size: 36px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 992px) and (max-width: 1200px) {
-    .about {
-        &__content {
-            &__desc {
-                &__bottom {
-                    padding-top: 40px;
-                }
-
-                p {
-                    font-size: 15px;
-                    line-height: 25px;
-
-                    span {
-                        font-size: 43px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1200px) and (max-width: 1400px) {
-    .about {
-        &__content {
-            &__desc {
-                &__bottom {
-                    padding-top: 50px;
-                }
-
-                p {
-                    font-size: 19px;
-                    line-height: 30px;
-
-                    span {
-                        font-size: 50px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 1400px) and (max-width: 1700px) {
-    .about {
-        &__content {
-            &__desc {
-                &__bottom {
-                    padding-top: 55px;
-                }
-
-                p {
-
-                    font-size: 23px;
-                    line-height: 35px;
-
-                    span {
-                        font-size: 56px;
-                    }
-                }
             }
         }
     }
