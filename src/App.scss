@@ -12,14 +12,29 @@
 
 @font-face {  
   font-family: 'Bank Sans EF CY';
+  font-weight: 300;
   src: local('Bank Sans EF CY'),
        url('./assets/fonts/Bank Sans EF CY.otf') format('truetype'), /* Super Modern Browsers */
 }
 
 @font-face {  
   font-family: 'Vermin Vibes';
-  src: local('Vermin Vibes'), local('VerminVibes')
-       url('./assets/fonts/vermin-vibes/vermin_vibes.ttf') format('truetype'), /* Super Modern Browsers */
+  src: url('./assets/fonts/VerminVibesV-Zlg3.ttf') format('truetype'); /* Super Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {  
+  font-family: 'BigBang';
+  src: local('BigBang'), local('BigBang'),
+       url('./assets/fonts/BigBang.otf') format('truetype'), /* Super Modern Browsers */
+}
+
+@font-face {  
+  font-family: 'Phoska Dangers';
+  src: url('./assets/fonts/PhoskaDangers-Regular.ttf') format('truetype'); /* Super Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
 }
 
 .App {

@@ -9,8 +9,9 @@ const NavBar = () => {
     return (
         <div className="navBar">
             {
-                menu.map((item) => (
+                menu.map((item, index) => (
                     <Link
+                        key={index}
                         activeClass="active" 
                         smooth={true} 
                         duration={500} 
