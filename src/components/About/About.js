@@ -4,15 +4,15 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
 import './About.scss';
-import back from '../../assets/img/bg/1.png';
+import back from '../../assets/img/bg/webp/1.webp';
 import tag from '../../assets/img/tags/1.png';
-import pic from '../../assets/img/bg/2.png';
+import pic from '../../assets/img/bg/webp/2.webp';
 
-import slideImg1 from '../../assets/img/charac/3.png';
-import slideImg2 from '../../assets/img/charac/4.png';
-import slideImg3 from '../../assets/img/charac/5.png';
-import slideImg4 from '../../assets/img/charac/6.png';
-import slideImg5 from '../../assets/img/charac/7.png';
+import slideImg1 from '../../assets/img/charac/webp/3.webp';
+import slideImg2 from '../../assets/img/charac/webp/4.webp';
+import slideImg3 from '../../assets/img/charac/webp/5.webp';
+import slideImg4 from '../../assets/img/charac/webp/6.webp';
+import slideImg5 from '../../assets/img/charac/webp/7.webp';
 
 const slideImages = [
     slideImg1, slideImg2, slideImg3, slideImg4, slideImg5

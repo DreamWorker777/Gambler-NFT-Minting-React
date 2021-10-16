@@ -11,6 +11,7 @@ import 'react-notifications/lib/notifications.css';
 import './App.scss';
 
 import Home from './pages/Home/Home';
+import Mint from './pages/Mint/Mint';
 
 import Footer from './pages/Footer/Footer';
 import TopMenu from './pages/TopMenu/TopMenu';
@@ -24,7 +25,7 @@ function App() {
 
 				<Switch>
 					<Route exact path='/' component={Home} />
-					{/* <Route path='/mint' component={Mint} /> */}
+					<Route path='/mint' component={Mint} />
 				</Switch>
 
 				<Join />
