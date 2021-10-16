@@ -1,6 +1,6 @@
 import './Intro.scss';
 
-import character from '../../assets/img/charac/1.png';
+import character from '../../assets/img/charac/webp/1.webp';
 import textPng1 from '../../assets/img/homeText1.png';
 import textPng2 from '../../assets/img/homeText2.png';
 

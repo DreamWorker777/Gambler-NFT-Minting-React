@@ -1,7 +1,7 @@
 import './Team.scss';
 import tag from '../../assets/img/tags/5.png';
-import teamImg1 from '../../assets/img/charac/4.png';
-import teamImg2 from '../../assets/img/charac/5.png';
+import teamImg1 from '../../assets/img/charac/webp/4.webp';
+import teamImg2 from '../../assets/img/charac/webp/5.webp';
 import icon1 from '../../assets/img/icons/topIcon3.png';
 import icon2 from '../../assets/img/icons/topIcon2.png';
 
