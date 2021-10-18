@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
@@ -15,17 +15,17 @@ import slideImg4 from '../../assets/img/charac/webp/6.webp';
 import slideImg5 from '../../assets/img/charac/webp/7.webp';
 
 const slideImages = [
-    slideImg1, slideImg2, slideImg3, slideImg4, slideImg5
+    slideImg1, slideImg2, slideImg3, slideImg4, slideImg5, slideImg1, slideImg2, slideImg3, slideImg4, slideImg5
 ];
 
 const SlideShow = () => {
     const slideRef = useRef();
+    const [slideCount, setSlideCount] = useState(7);
 
     const properties = {
         duration: 3000,
         transitionDuration: 500,
         infinite: true,
-        slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
         indicators: i => (<div className="indicator"></div>)
@@ -40,8 +40,19 @@ const SlideShow = () => {
             slideRef.current.goBack();
     }
 
+    useState(() => {
+        setInterval(() => {
+            if( window.innerWidth > 1500 )
+                setSlideCount(7);
+            else if( window.innerWidth > 768 )
+                setSlideCount(5);
+            else
+                setSlideCount(3);
+        }, 100);
+    })
+
     return (
-        <Slide easing="ease" {...properties} onWheel={ mouseWheelEvent } ref={ slideRef }>
+        <Slide easing="ease" {...properties}  slidesToShow={slideCount} onWheel={ mouseWheelEvent } ref={ slideRef }>
             {slideImages.map((each, index) => (
                 <div key={index} className="about__slider__eachItem">
                     <div style={{ backgroundImage: `url(${each})` }}>
@@ -56,7 +67,7 @@ const About = () => {
     return (
         <div className="about" id="about">
             <img alt="background" className="about__back" src={back}></img>
-            <div className="about__content">
+            <div className="about__content container">
                 <img alt="tag" className="about__content__tag" src={tag}></img>
 
                 <div className="about__content__desc">

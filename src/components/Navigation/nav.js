@@ -18,7 +18,6 @@ const NavBar = () => {
                         spy={true} 
                         className="navBar__item"
                         to={ item }
-                        offset={ 5 }
                     >
                         { item.toUpperCase() }
                     </Link>

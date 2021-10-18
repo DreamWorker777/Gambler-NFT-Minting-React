@@ -1,29 +1,27 @@
 .topMenu {
-    position: relative;
-    height: 7vw;
     z-index: 200;
+    display: flex;
+    top: 50px;
+    justify-content: space-between;
+    align-items: center;
 
     &__logo {
-        position: absolute;
-        left: calc(4.5vw);
-        top: calc(2.5vw);
         display: flex;
         align-items: center;
 
         &__img {
-            width: calc(1.9vw);
-            margin-right: 7%;
+            width: 24.62px;            ;
+            margin-right: 10px;
         }
 
         &__text {
-            width: calc(13vw);
+            font-size: 1.3rem;
+            color: white;
+            font-family: Vermin Vibes;
         }
     }
 
     &__menu {
-        position: absolute;
-        right: calc(3vw);
-        top: calc(2.5vw);
         display: flex;
         align-items: center;
 
@@ -31,8 +29,8 @@
             font-family: Cygnito Mono;
             font-style: normal;
             font-weight: normal;
-            font-size: 1vw;
-            line-height: 1.5vw;
+            font-size: 14px;
+            line-height: 21px;
             /* identical to box height */
         
             /* WHITTE */
@@ -45,13 +43,13 @@
             order: 0;
             flex-grow: 0;
         
-            padding: 0.5vw 1vw;
+            padding: 5px 10px;
             outline-style: unset;
             border: unset;
         
             background-color: rgb(25, 25, 25) !important;
             border: 1px solid #FFFFFF;
-            margin-right: calc(3vw);
+            margin-right: 30px;
 
             &:hover {
                 cursor: pointer;
@@ -62,12 +60,15 @@
         }
 
         &__icons {
+            display: flex;
+            align-items: center;
+
             a {
-                margin-right: calc(1.1vw);
-                margin-left: calc(1.1vw);
+                margin-right:15px;
+                margin-left: 15px;
 
                 img {
-                    width: calc(1.9vw);
+                    width: 28px;
                 }
             }
         }
@@ -85,21 +86,22 @@
             &__icon {
                 border: none;
                 cursor: pointer;
-                width: calc(3vw);
+                width: 30px;
             }
 
             &__content {
                 display: none;
                 position: absolute;
                 background-color: black;
-                min-width: 20vw;
+                min-width: 200px;
                 z-index: 100;
                 right: 0;
+                top: 23px;
 
                 a {
-                    font-size: 2vw;
+                    font-size: 20;
                     color: white;
-                    padding: 1.6vw 2vw;
+                    padding: 10px 20px;
                     text-decoration: none;
                     display: block;
                     text-align: left;
@@ -114,34 +116,20 @@
     }
 }
 
-@media (max-width: 481px) {
+// Medium devices (tablets, 768px and up)
+@media (min-width: 0px) and (max-width: 768px) {
     .topMenu {
-        &__logo {
-            &__img {
-                width: calc(4vw);
-            }
+        padding: 0 20px;
+        top: 20px;
 
+        &__logo {
             &__text {
                 display: none;
             }
         }
 
-        &__menu {    
-            &__icons {
-                display: none;
-            }
-
-            &__dropDownMenu {
-                display: flex;
-            }
-        }
-    }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 481px) and (max-width: 768px) {
-    .topMenu {
         &__menu {
+
             &__icons {
                 display: none;
             }

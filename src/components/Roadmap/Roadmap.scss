@@ -1,10 +1,19 @@
 .roadmap {
+    &__content__wrapper {
+        background: #CDAAFA;
+        width: 100%;
+    }
+
     &__content {
         position: relative;
         display: flex;
         flex-wrap: wrap;
-        background: #CDAAFA;
-        margin-top: -5px;
+
+        max-width: 1400px;
+        padding: 0 60px;
+        transform: translateX(-50%);
+        left: 50%;
+        z-index: 12;
 
         &__tag {
             position: absolute;
@@ -25,15 +34,15 @@
             width: 55%;
 
             div {
-                padding-left: 8vw;
-                padding-top: 5vw;
+                padding-left: 4vw;
+                padding-top: 4vw;
             }
 
             &__title {
                 font-family: Vermin Vibes;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 7.5vw;
+                font-size: 5.5vw;
                 line-height: 0;
                 /* identical to box height */
 
@@ -79,19 +88,29 @@
         }
     }
 
-    &__post {
-        position: relative;
-        margin-top: -5px;
+    &__post__wrapper {
         background: #FFD682;
-        padding-left: 4vw;
-        padding-right: 4vw;
+    }
+
+    &__post {
+        cursor: pointer;
+        position: relative;
         padding-top: 6vw;
+
+        max-width: 1520px;
+        transform: translateX(-50%);
+        left: 50%;
+
+        .react-slideshow-container {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
 
         &__tag {
             position: absolute;
             width: 25vw;
             top: calc(-2vw);
-            left: calc(10vw);
+            left: calc(15vw);
         }
 
         &__eachItem {
@@ -152,7 +171,7 @@
             }
         }
         
-        &__eachItem.active {
+        &__eachItem.active, &__eachItem:hover {
             color: black;
 
             .roadmap__post__eachItem__content {
@@ -165,6 +184,8 @@
 @media (min-width: 0px) and (max-width: 768px) {
     .roadmap {
         &__content {
+            padding: 0;
+
             &__desc {
                 width: 100%;
 
@@ -189,6 +210,122 @@
                 width: 55%;
 
                 padding-left: 30vw;
+            }
+        }
+
+        &__post {
+            &__tag {
+                position: relative;
+                top: 0;
+                left: 4vw;
+            }
+
+            &__slides {
+                padding-left: 17vw;
+                padding-right: 15vw;
+            }
+
+            &__eachItem__line {
+                position: absolute;
+                height: 100%;
+                left: -2vw;
+                width: 0.5vw;
+                border: unset;
+                background-color: #123;
+                margin-top: 5vw;
+
+                span {
+                    position: absolute;
+                    width: 2vw;
+                    height: 2vw;
+                    border-radius: 1vw;
+                    background: #123;
+                    transform: translate3d(-50%, 0, 0);
+                    left: 50%;
+                }
+
+                &.end {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .roadmap {
+        &__content {
+            &__tag {
+                top: -75px;
+                left: 450px;
+            }
+    
+            &__desc {
+                div {
+                    padding-left: 60px;
+                    padding-top: 60px;
+                }
+    
+                &__title {
+                    font-size: 82px;
+                    line-height: 0;
+                }
+    
+                &__first {
+                    font-size: 27px;
+                    line-height: 45px;
+                }
+    
+                &__second {
+                    font-size: 21px;
+                    line-height: 45px;
+                }
+    
+                p {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        &__post {
+            padding-top: 90px;
+    
+            &__tag {
+                position: absolute;
+                width: 375px;
+                top: -30px;
+                left: 225px;
+            }
+    
+            &__eachItem {
+                padding: 15px;
+    
+                &__index {
+                    font-size: 37.5px;
+                    line-height: 45px;
+                }
+    
+                &__title {
+                    font-size: 45px;
+                    line-height: 52px;
+                }
+    
+                &__content {
+                    padding: 30px;
+
+                    font-size: 22.5px;
+                    line-height: 37.5px;
+                    /* or 140% */
+    
+                    span {
+                        font-size: 45px;
+                    }
+    
+                    .mt {
+                        margin-top: 75px;
+                    }
+                }
             }
         }
     }

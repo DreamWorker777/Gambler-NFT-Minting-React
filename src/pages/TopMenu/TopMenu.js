@@ -1,20 +1,24 @@
 import {NotificationManager} from 'react-notifications';
+import { Link } from 'react-scroll'
 
 import './TopMenu.scss';
 
 import logo from '../../assets/logo.png';
-import logoText from '../../assets/logoText.png';
 import topIcon1 from '../../assets/img/icons/topIcon1.png';
 import topIcon2 from '../../assets/img/icons/topIcon2.png';
 import topIcon3 from '../../assets/img/icons/topIcon3.png';
 
 import menuIcon from '../../assets/img/icons/menu.png';
 
+const menu = [
+    "team", "roadmap", "rarity", "about", "home"
+];
+
 const TopLogo = () => {
     return (
         <div className="topMenu__logo">
             <img src={logo} className="topMenu__logo__img" alt="logo"></img>
-            <img src={logoText} className="topMenu__logo__text" alt="logo"></img>
+            <div className="topMenu__logo__text">CYBERUNNERS</div>
         </div>
     )
 }
@@ -36,11 +40,20 @@ const TopButtons = () => {
             <div className="topMenu__menu__dropDownMenu">
                 <img src={menuIcon} className="topMenu__menu__dropDownMenu__icon" alt="menu"></img>
                 <div className="topMenu__menu__dropDownMenu__content">
-                    <a href="#javascript;">HOME</a>
-                    <a href="#javascript;">ABOUT</a>
-                    <a href="#javascript;">RARITY</a>
-                    <a href="#javascript;">ROADMAP</a>
-                    <a href="#javascript;">TEAM</a>
+                    {
+                        menu.map((item, index) => (
+                            <Link
+                                key={index}
+                                smooth={true} 
+                                duration={500} 
+                                spy={true} 
+                                to={ item }
+                                offset={ 5 }
+                            >
+                                { item.toUpperCase() }
+                            </Link>
+                        ))
+                    }
                 </div>
             </div>
         </div>
@@ -49,7 +62,7 @@ const TopButtons = () => {
 
 export const TopMenu = () => {
     return (
-        <div className="topMenu">
+        <div className="topMenu container">
             <TopLogo />
             <TopButtons />
         </div>

@@ -1,6 +1,7 @@
 .about {
     position: relative;
     z-index: 10;
+    background: linear-gradient(180deg, #D64C6E 0%, #EE5272 66.73%);
 
     &__back {
         width: 100%;
@@ -10,14 +11,12 @@
         position: relative;
         display: flex;
         flex-wrap: wrap-reverse;
-        background: linear-gradient(180deg, #D64C6E 0%, #EE5272 66.73%);
-        margin-top: -5px;
 
         &__tag {
             position: absolute;
             width: 17%;
-            top: calc(-4vw);
-            left: calc(8vw);
+            top: -4vw;
+            padding-left: 4vw;
         }
 
         &__desc {
@@ -29,7 +28,7 @@
             }
 
             div {
-                padding-left: 8vw;
+                padding-left: 4vw;
                 padding-top: 9.5vw;
             }
 
@@ -50,7 +49,7 @@
                 span {
                     font-family: Vermin Vibes;
                     font-weight: 400;
-                    font-size: 4vw;
+                    font-size: 3.3vw;
                 }
             }
         }
@@ -67,7 +66,6 @@
         background-color: #191919;
         position: relative;
         z-index: 11;
-        margin-top: -5px;
 
         padding-top: calc(5vw);
         padding-bottom: calc(5vw);
@@ -123,6 +121,66 @@
             &__pic {
                 width: 70%;
                 margin-left: 20%;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1500px) {
+    .about {
+        &__slider {
+            &__eachItem {
+                display: flex;
+                justify-content: center;
+    
+                div {
+                    width: calc(17vw);
+                    height: calc(18vw);
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .about {
+        &__content {
+            &__tag {
+                padding-left: 50px;
+            }
+
+            &__desc {
+                div {
+                    padding-left: 50px;
+                    padding-top: 120px;
+                }
+    
+                p {
+                    font-size: 21px;
+                    line-height: 25px;
+    
+                    span {
+                        font-size: 50px;
+                    }
+                }
+
+                &__bottom {
+                    padding-top: 25px;
+                }
+            }
+        }
+
+        &__slider {
+            &__eachItem {
+                display: flex;
+                justify-content: center;
+    
+                div {
+                    width: calc(12.14vw);
+                    height: calc(14vw);
+                    background-size: cover;
+                }
             }
         }
     }
