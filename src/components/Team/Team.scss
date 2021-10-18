@@ -2,13 +2,12 @@
     &__members {
         position: relative;
         background: #191919;
-        margin-top: -5px;
 
         &__tag {
             position: absolute;
             width: 15%;
             top: calc(-7vw);
-            right: calc(20vw);
+            right: calc(10vw);
         }
 
         &__content {
@@ -51,6 +50,7 @@
                 div {
                     width: 50%;
                     padding-right: 5vw;
+                    position: relative;
 
                     img {
                         width: 35vw;
@@ -99,6 +99,139 @@
                     background: #7994C0;
                     width: 2vw !important;
                     height: auto !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .team {
+        &__members {        
+            &__tag {
+                right: 5vw;
+            }
+    
+            &__content {
+                padding: 4vw;
+                padding-top: 15vw;
+    
+                &__title {
+                    font-size: 5vw;
+                    line-height: 4vw;
+    
+                    margin-block-start: 1vw;
+                    margin-block-end: 1vw;
+                }
+    
+                &__desc {
+                    font-size: 2.3vw;
+                    line-height: 1.7vw;
+                }
+    
+                &__people {
+                    display: flex;
+                    padding-top: 4vw;
+                    flex-direction: column;
+    
+                    div {
+                        width: 100%;
+                        padding: 5vw;
+                        padding-left: 0 !important;
+                        padding-right: 0 !important;
+                        text-align: center;
+    
+                        img {
+                            width: 70vw;
+                            height: 68vw;
+                        }
+    
+                        a {
+                            margin-right: 2vw;
+                        }
+                    }
+    
+                    &__name {
+                        font-size: 3.7vw;
+                        line-height: 3.7vw;
+                    }
+                    
+                    &__desc {
+                        font-size: 3vw;
+                        line-height: 3vw;
+                    }
+    
+                    &__firstIcon {
+                        width: 4vw !important;
+                    }
+    
+                    &__secondIcon {
+                        width: 4vw !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .team {
+        &__members {
+            &__tag {
+                top: -105px;
+                right: 150px;
+            }
+    
+            &__content {
+                padding: 120px;
+                padding-top: 60px;
+    
+                &__title {
+                    font-size: 60px;
+                    line-height: 60px;
+    
+                    margin-block-start: 15px;
+                    margin-block-end: 15px;
+                }
+    
+                &__desc {
+                    font-size: 25.5px;
+                    line-height: 25.5px;
+                }
+    
+                &__people {
+                    padding-top: 60px;
+    
+                    div {
+                        padding-right: 75px;
+    
+                        img {
+                            width: 525px;
+                            height: 510px;
+                        }
+    
+                        a {
+                            margin-right: 15px;
+                        }
+                    }
+    
+                    &__name {
+                        font-size: 25.5px;
+                        line-height: 25.5px;
+                    }
+                    
+                    &__desc {
+                        font-size: 18px;
+                        line-height: 18px;
+                    }
+    
+                    &__firstIcon {
+                        width: 30px !important;
+                    }
+    
+                    &__secondIcon {
+                        width: 30px !important;
+                    }
                 }
             }
         }

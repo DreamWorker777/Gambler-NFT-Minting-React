@@ -11,6 +11,7 @@ import back from '../../assets/img/charac/webp/2.webp';
 const SlideShow = () => {
     const slideRef = useRef();
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [mobile, setMobile] = useState(false);
 
     const slides = [
         {
@@ -68,7 +69,7 @@ const SlideShow = () => {
     const properties = {
         duration: 3000,
         transitionDuration: 500,
-        infinite: true,
+        infinite: false,
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
@@ -81,44 +82,84 @@ const SlideShow = () => {
         }
     };
 
+    const goToIndex = ( idx ) => {
+        slideRef.current.goTo(idx);
+    }
+
+    useState(() => {
+        setInterval(() => {
+            if( window.innerWidth > 768 )
+                setMobile(false);
+            else
+                setMobile(true);
+        }, 100);
+    })
+
     return (
-        <Slide easing="ease" {...properties} ref={ slideRef }>
-            {slides.map((each, index) => (
-                <div key={index} className={`roadmap__post__eachItem ${ currentIndex === index ? 'active' : '' }`}>
-                    <p className="roadmap__post__eachItem__index">{each.index}</p>
-                    <p className="roadmap__post__eachItem__title">{each.title}</p>
-                    <div 
-                        className="roadmap__post__eachItem__content" 
-                        dangerouslySetInnerHTML={{
-                            __html: each.content
-                        }}>
-                    </div>
+            !mobile ?
+                <Slide easing="ease" {...properties} ref={ slideRef }>
+                    {slides.map((each, index) => (
+                        <div key={index} className={`roadmap__post__eachItem ${ currentIndex === index ? 'active' : '' }`} onClick={() => goToIndex(index)}>
+                            <p className="roadmap__post__eachItem__index">{each.index}</p>
+                            <p className="roadmap__post__eachItem__title">{each.title}</p>
+                            <div 
+                                className="roadmap__post__eachItem__content" 
+                                dangerouslySetInnerHTML={{
+                                    __html: each.content
+                                }}>
+                            </div>
+                        </div>
+                    ))}
+                </Slide> : (
+                <div className="roadmap__post__slides">
+                    {slides.map((each, index) => (
+                        <div key={index} style={{ position: 'relative' }} >
+                            <div className={`roadmap__post__eachItem__line ${ index == 4 ? 'end' : '' }`}>
+                                <span></span>
+                            </div>
+
+                            <div className={`roadmap__post__eachItem ${ currentIndex === index ? 'active' : '' }`} >
+                                <p className="roadmap__post__eachItem__index">{each.index}</p>
+                                <p className="roadmap__post__eachItem__title">{each.title}</p>
+                                <div 
+                                    className="roadmap__post__eachItem__content" 
+                                    dangerouslySetInnerHTML={{
+                                        __html: each.content
+                                    }}>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-            ))}
-        </Slide>
+                )
     )
 }
 
 export const RoadMap = () => {
     return (
         <div className="roadmap" id="roadmap">
-            <div className="roadmap__content">
-                <img alt="tag" className="roadmap__content__tag" src={tag}></img>
-                <div className="roadmap__content__desc">
-                    <div>
-                    <p className="roadmap__content__desc__title">ROADMAP</p>
-                        <p className="roadmap__content__desc__first">Our vision for the future of CYBERUNNERS is filled with many exciting milestones to look forward to. We hope to expand the Cyberverse to many mediums to create an extensive universe for our supporters to explore!</p>
-                        <p className="roadmap__content__desc__second">Roadmap wil not be rolled out in a sequential manner but might have two or more phases happening concurently.</p>
+            <div className="roadmap__content__wrapper">
+                <div className="roadmap__content">
+                    <img alt="tag" className="roadmap__content__tag" src={tag}></img>
+                    <div className="roadmap__content__desc">
+                        <div>
+                            <p className="roadmap__content__desc__title">ROADMAP</p>
+                            <p className="roadmap__content__desc__first">Our vision for the future of CYBERUNNERS is filled with many exciting milestones to look forward to. We hope to expand the Cyberverse to many mediums to create an extensive universe for our supporters to explore!</p>
+                            <p className="roadmap__content__desc__second">Roadmap wil not be rolled out in a sequential manner but might have two or more phases happening concurently.</p>
+                        </div>
+                    </div>
+                    <div className="roadmap__content__back">
+                        <img alt="back" src={back}></img>
                     </div>
                 </div>
-                <div className="roadmap__content__back">
-                    <img alt="back" src={back}></img>
-                </div>
             </div>
+            
 
-            <div className="roadmap__post">
-                <img alt="tag" className="roadmap__post__tag" src={postTag}></img>
-                <SlideShow />
+            <div className="roadmap__post__wrapper">
+                <div className="roadmap__post">
+                    <img alt="tag" className="roadmap__post__tag" src={postTag}></img>
+                    <SlideShow />
+                </div>
             </div>
         </div>
     )

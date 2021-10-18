@@ -4,11 +4,13 @@ import logoText from '../../assets/logoText.png';
 
 export const Footer = () => {
     return (
-        <div className="footer">
+        <div className="footer container">
             <div className="footer__content">
                 <div className="footer__content__logo">
-                    <img src={logo} className="footer__content__logo__img" alt="logo"></img>
-                    <img src={logoText} className="footer__content__logo__text" alt="logo"></img>
+                    <div className="logo_wrapper">
+                        <img src={logo} className="footer__content__logo__img" alt="logo"></img>
+                        <div className="footer__content__logo__text">CYBERUNNERS</div>
+                    </div>
                 </div>
 
                 <div className="footer__content__menu">

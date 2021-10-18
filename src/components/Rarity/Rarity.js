@@ -71,23 +71,25 @@ const Explore = ({ hidden }) => {
 
     return (
         <div className={`rarity__explore ${hidden}`}>
-            <img alt="tag" className="rarity__explore__tag" src={exploreTag}></img>
-            <div>
-                <p className="rarity__explore__title">CLICK TO EXPLORE</p>
+            <div className="container">
+                <img alt="tag" className="rarity__explore__tag" src={exploreTag}></img>
+                <div className="subContainer">
+                    <p className="rarity__explore__title">CLICK TO EXPLORE</p>
 
-                <div className="rarity__explore__charac">
-                    <div>
-                        <img alt="character" style={{ position: 'unset' }} src={ layers.body[ characSetting.body ] }></img>
-                        <img alt="character" src={ layers.clothing[ characSetting.clothing ] }></img>
-                        <img alt="character" src={ layers.biomods[ characSetting.biomods ] }></img>
-                        <img alt="character" src={ layers.hair[ characSetting.hair ] }></img>
-                        <img alt="character" src={ layers.glass[ characSetting.glass ] }></img>
+                    <div className="rarity__explore__charac">
+                        <div>
+                            <img alt="character" style={{ position: 'unset' }} src={ layers.body[ characSetting.body ] }></img>
+                            <img alt="character" src={ layers.clothing[ characSetting.clothing ] }></img>
+                            <img alt="character" src={ layers.biomods[ characSetting.biomods ] }></img>
+                            <img alt="character" src={ layers.hair[ characSetting.hair ] }></img>
+                            <img alt="character" src={ layers.glass[ characSetting.glass ] }></img>
 
-                        <a href="#javascript;" onClick={ () => clickBody("hair") }><p className="rarity__explore__charac__hair">HAIR</p></a>
-                        <a href="#javascript;" onClick={ () => clickBody("glass") }><p className="rarity__explore__charac__eyewear">EYEWEAR</p></a>
-                        <a href="#javascript;" onClick={ () => clickBody("biomods") }><p className="rarity__explore__charac__biomods">BIOMODS</p></a>
-                        <a href="#javascript;" onClick={ () => clickBody("body") }><p className="rarity__explore__charac__body">BODY</p></a>
-                        <a href="#javascript;" onClick={ () => clickBody("clothing") }><p className="rarity__explore__charac__clothing">CLOTHING</p></a>
+                            <a href="#javascript;" onClick={ () => clickBody("hair") }><p className="rarity__explore__charac__hair">HAIR</p></a>
+                            <a href="#javascript;" onClick={ () => clickBody("glass") }><p className="rarity__explore__charac__eyewear">EYEWEAR</p></a>
+                            <a href="#javascript;" onClick={ () => clickBody("biomods") }><p className="rarity__explore__charac__biomods">BIOMODS</p></a>
+                            <a href="#javascript;" onClick={ () => clickBody("body") }><p className="rarity__explore__charac__body">BODY</p></a>
+                            <a href="#javascript;" onClick={ () => clickBody("clothing") }><p className="rarity__explore__charac__clothing">CLOTHING</p></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -110,19 +112,21 @@ const Rarity = () => {
     return (
         <div className="rarity" id="rarity">
             <div className="rarity__content">
-                <img alt="tag" className="rarity__content__tag" src={tag}></img>
+                <div className="container" style={{ display: 'flex', flexWrap: 'wrap' }}>
+                    <img alt="tag" className="rarity__content__tag" src={tag}></img>
 
-                <div className="rarity__content__back">
-                    <img alt="back" src={back}></img>
-                </div>
+                    <div className="rarity__content__back">
+                        <img alt="back" src={back}></img>
+                    </div>
 
-                <div className="rarity__content__desc">
-                    <div>
-                        <p className="rarity__content__desc__title">rarity</p>
-                        <p className="rarity__content__desc__first">The artworks are carefully crafted by utilising beautifully hand drawn traitsand a generative aglorithm to produce the characters of the Cyberverse.</p>
-                        <p className="rarity__content__desc__second">There are 12 categories in total: Backgrounds, Bodies, Expressions, Eyes, Clothing, Stickers, Tattoos, Hair, Eyewear, Headgear, Biomods and Extras!</p>
+                    <div className="rarity__content__desc">
+                        <div>
+                            <p className="rarity__content__desc__title">rarity</p>
+                            <p className="rarity__content__desc__first">The artworks are carefully crafted by utilising beautifully hand drawn traitsand a generative aglorithm to produce the characters of the Cyberverse.</p>
+                            <p className="rarity__content__desc__second">There are 12 categories in total: Backgrounds, Bodies, Expressions, Eyes, Clothing, Stickers, Tattoos, Hair, Eyewear, Headgear, Biomods and Extras!</p>
 
-                        <button className="rarity__content__desc__exploreBtn" onClick={() => setShowExplore(true)}>EXPLORE</button>
+                            <button className="rarity__content__desc__exploreBtn" onClick={() => setShowExplore(true)}>EXPLORE</button>
+                        </div>
                     </div>
                 </div>
             </div>

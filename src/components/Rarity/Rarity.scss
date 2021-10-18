@@ -4,6 +4,7 @@
         display: flex;
         flex-wrap: wrap;
         background: #9BE7A9;
+        z-index: 10;
 
         &__tag {
             position: absolute;
@@ -14,7 +15,8 @@
         }
 
         &__back {
-            width: 36%;
+            width: 32%;
+            padding-left: 4%;
 
             img {
                 width: 100%;
@@ -27,19 +29,18 @@
             div {
                 padding: 5vw;
                 padding-top: 4vw;
-                padding-right: 16vw;
             }
 
             &__title {
                 font-family: Vermin Vibes;
                 font-weight: normal;
-                font-size: 6vw;
-                line-height: 3vw;
+                font-size: 4vw;
+                line-height: 2vw;
                 /* identical to box height, or 88% */
                 
                 color: #4F3E72 !important;
-                margin-block-start: 5vw;
-                margin-block-end: 5vw;
+                margin-block-start: 3vw;
+                margin-block-end: 3vw;
             }
 
             &__first {
@@ -47,7 +48,7 @@
                 
                 font-weight: 300;
                 font-size: 1.6vw;
-                line-height: 2.5vw;
+                line-height: 2vw;
             }
 
             &__second {
@@ -55,7 +56,7 @@
                 font-style: normal;
                 font-weight: 300;
                 font-size: 1.4vw;
-                line-height: 2vw;
+                line-height: 1.5vw;
             }
 
             p {
@@ -95,9 +96,9 @@
     &__explore {
         position: relative;
         background: #F1549E;
-        margin-top: -5px;
+        z-index: 11;
         
-        div {
+        .subContainer {
             padding: 8vw;
             padding-top: 3vw;
             padding-bottom: 0;
@@ -107,7 +108,7 @@
             position: absolute;
             width: 8%;
             top: calc(-4vw);
-            right: calc(20vw);
+            right: calc(18vw);
         }
 
         &__title {
@@ -192,6 +193,7 @@
                 width: 100%;
                 overflow: hidden;
                 height: calc(77vw);
+                padding-left: 0;
             }
 
             &__desc {
@@ -220,6 +222,122 @@
                     margin-top: 5vw;
                     margin-bottom: 3vw;
                     padding: 2vw 2.3vw;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    .rarity {
+        &__content {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            background: #9BE7A9;
+
+            &__back {    
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__tag {
+                padding-right: 60px;
+                right: 0;
+                z-index: 200;
+            }
+    
+            &__desc {
+                width: 64%;
+    
+                div {
+                    padding: 40px;
+                    padding-top: 60px;
+                    padding-right: 20px;
+                }
+    
+                &__title {
+                    font-size: 60px;
+                    line-height: 55px;
+                    /* identical to box height, or 88% */
+                    
+                    margin-block-start: 50px;
+                    margin-block-end: 50px;
+                }
+    
+                &__first {
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+    
+                &__second {
+                    font-size: 21px;
+                    line-height: 30px;
+                }
+    
+                button {
+                    font-size: 17px;
+    
+                    padding: 10px 15px;
+                    margin-top: 50px;
+                }
+            }
+        }
+
+        &__explore {
+            .subContainer {
+                padding: 120px;
+                padding-top: 45px;
+                padding-bottom: 0;
+            }
+    
+            &__tag {
+                width: 8%;
+                top: -40px;
+                right: 270px;
+            }
+    
+            &__title {
+                font-size: 37px;
+                line-height: 15px;
+            }
+    
+            &__charac {
+    
+                div {
+                    p {
+                        font-size: 21px;
+                    }
+                }
+    
+                img {
+                    width: 600px;
+                }
+    
+                &__hair {
+                    left: 120px;
+                    top: 75px;
+                }
+    
+                &__eyewear {
+                    right: 0;
+                    top: 180px;
+                }
+    
+                &__biomods {
+                    right: 60px;
+                    top: 300px;
+                }
+    
+                &__body {
+                    left: 105px;
+                    top: 315px;
+                }
+    
+                &__clothing {
+                    right: -45px;
+                    bottom: 90px;
                 }
             }
         }

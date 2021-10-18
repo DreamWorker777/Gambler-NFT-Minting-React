@@ -39,6 +39,7 @@
 
 .App {
   background: #191919;
+  overflow: hidden;
 }
 
 .hidden {
@@ -76,4 +77,18 @@
 
 .fade-hide {
   opacity: 0;
+}
+
+.container {
+  max-width: 1400px;
+  position: relative;
+  padding: 0 60px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .container {
+    padding: 0 0px;
+  }
 }

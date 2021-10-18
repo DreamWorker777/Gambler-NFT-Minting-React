@@ -7,12 +7,13 @@ ul {
 .navBar {
     position: fixed;
     transform: translate3d(0, -50%, 0);
-    top: 55%;
+    top: 50%;
     z-index: 100;
     text-align: center;
     display: flex;
     flex-direction: column;
-    left: 0vw;
+    left: 55px;
+    padding-top: 50px;
 
     &__item {
         cursor: pointer;
@@ -21,14 +22,14 @@ ul {
         color: white;
         transform: rotate(180deg);
 
-        padding: 1vw;
-        margin: 1vw;
+        padding: 1vh 0.5vh;
+        margin: 3vh 0;
 
         font-family: Bahnschrift;
         font-style: normal;
         font-weight: normal;
-        font-size: 1.5vw;
-        line-height: 1.8vw;
+        font-size: 20px;
+        line-height: 24px;
     
         &.active {
             background-color: white;
@@ -46,5 +47,11 @@ ul {
 @media (min-width: 0px) and (max-width: 768px) {
     .navBar {
         display: none;
+    }
+}
+
+@media (min-width: 1500px){
+    .navBar {
+        left: calc(50% - 700px);
     }
 }
