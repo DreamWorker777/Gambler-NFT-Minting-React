@@ -9,10 +9,9 @@ import postTag from '../../assets/img/tags/4.png';
 import back from '../../assets/img/website_art/5.webp';
 
 const SlideShow = () => {
-    const slideRef = useRef();
     const [currentIndex, setCurrentIndex] = useState(0);
     const [mobile, setMobile] = useState(false);
-
+    
     const slides = [
         {
             index: 'P01',
@@ -63,26 +62,13 @@ const SlideShow = () => {
                 <p>and we look forward to having you with us on every step of the way!</p>
             `
         }
-    ]
-
-    const properties = {
-        duration: 3000,
-        transitionDuration: 500,
-        infinite: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
-        indicators: false,
-        autoplay: false,
-        onChange: () => {
-            setTimeout(() => {
-                setCurrentIndex( slideRef.current.state.index );
-            }, 100)
-        }
-    };
+    ];
 
     const goToIndex = ( idx ) => {
-        slideRef.current.goTo(idx);
+        setCurrentIndex(idx);
+        
+        if( idx === 4 )
+            return;   
     }
 
     useEffect(() => {
@@ -96,23 +82,25 @@ const SlideShow = () => {
 
     return (
             !mobile ?
-                <Slide easing="ease" {...properties} ref={ slideRef }>
-                    {slides.map((each, index) => (
-                        <div key={index} className={`roadmap__post__eachItem ${ currentIndex === index ? 'active' : '' }`} onClick={() => goToIndex(index)}>
-                            <div style={{ display: 'flex' }}>
-                                <p className="roadmap__post__eachItem__index">{each.index}</p>
-                                { index != 4 ? <div className="roadmap__post__eachItem__index__line"></div> : null}
+                <div className="roadmap__post__slidesWrapper">
+                    <div className="roadmap__post__slidesFlex" style={{ marginLeft: `calc(25% - 50% * ${currentIndex})` }}>
+                        {slides.map((each, index) => (
+                            <div key={index} className={`roadmap__post__eachItem ${ currentIndex === index ? 'active' : '' }`} onClick={() => goToIndex(index)}>
+                                <div style={{ display: 'flex' }}>
+                                    <p className="roadmap__post__eachItem__index">{each.index}</p>
+                                    { index !== 4 ? <div className="roadmap__post__eachItem__index__line"></div> : null}
+                                </div>
+                                <p className="roadmap__post__eachItem__title">{each.title}</p>
+                                <div 
+                                    className="roadmap__post__eachItem__content" 
+                                    dangerouslySetInnerHTML={{
+                                        __html: each.content
+                                    }}>
+                                </div>
                             </div>
-                            <p className="roadmap__post__eachItem__title">{each.title}</p>
-                            <div 
-                                className="roadmap__post__eachItem__content" 
-                                dangerouslySetInnerHTML={{
-                                    __html: each.content
-                                }}>
-                            </div>
-                        </div>
-                    ))}
-                </Slide> : (
+                        ))}
+                    </div>
+                </div> : (
                 <div className="roadmap__post__slides">
                     {slides.map((each, index) => (
                         <div key={index} style={{ position: 'relative' }} >

@@ -104,6 +104,7 @@
         cursor: pointer;
         position: relative;
         padding-top: 6vw;
+        padding-bottom: 6vw;
 
         max-width: 1520px;
         transform: translateX(-50%);
@@ -112,6 +113,23 @@
         .react-slideshow-container {
             padding-left: 100px;
             padding-right: 100px;
+        }
+
+        &__slidesWrapper {
+            position: relative;
+            overflow: hidden;
+
+            width: calc(100% - 200px);
+            transform: translate3d(-50%, 0, 0);
+            left: 50%;
+        }
+
+        &__slidesFlex {
+            display: flex;
+            position: relative;
+            width: calc(50% * 5);
+            transition: all 1s;
+            margin-left: 0px;
         }
 
         &__tag {
@@ -124,6 +142,7 @@
         &__eachItem {
             padding: 1vw;
             color: #685837;
+            width: 50%;
 
             p {
                 margin-block-start: 0.5em;
@@ -242,6 +261,8 @@
             }
 
             &__eachItem {
+                width: unset;
+
                 &__index {
                     font-size: 3vw;
                     line-height: 3vw;
@@ -325,6 +346,7 @@
 
         &__post {
             padding-top: 90px;
+            padding-bottom: 90px;
     
             &__tag {
                 position: absolute;
