@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import './Rarity.scss';
 import tag from '../../assets/img/tags/2.png';
 import exploreTag from '../../assets/img/tags/3.png';
-import back from '../../assets/img/bg/webp/3.webp';
+import back from '../../assets/img/website_art/4.webp';
 
 import body1 from '../../assets/img/layers/webp/1-body-01.webp';
 import body2 from '../../assets/img/layers/webp/1-body-02.webp';

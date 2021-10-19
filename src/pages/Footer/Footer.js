@@ -1,5 +1,5 @@
 import './Footer.scss';
-import logo from '../../assets/img/icons/logo_white.png';
+import logo from '../../assets/img/icons/logo.svg';
 import { Link } from 'react-scroll'
 
 export const Footer = () => {

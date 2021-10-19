@@ -6,7 +6,7 @@ import 'react-slideshow-image/dist/styles.css'
 import './Roadmap.scss';
 import tag from '../../assets/img/tags/6.png';
 import postTag from '../../assets/img/tags/4.png';
-import back from '../../assets/img/charac/webp/2.webp';
+import back from '../../assets/img/website_art/5.webp';
 
 const SlideShow = () => {
     const slideRef = useRef();

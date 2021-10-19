@@ -1,6 +1,6 @@
 import './Join.scss';
-import icon3 from '../../assets/img/icons/Vector (6).png';
-import back from '../../assets/img/bg/webp/4.webp';
+import icon3 from '../../assets/img/icons/discord_icon.svg';
+import back from '../../assets/img/website_art/6.webp';
 
 export const Join = () => {
     return (

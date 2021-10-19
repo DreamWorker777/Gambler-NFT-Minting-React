@@ -1,9 +1,9 @@
 import './Team.scss';
 import tag from '../../assets/img/tags/5.png';
-import teamImg1 from '../../assets/img/charac/webp/4.webp';
-import teamImg2 from '../../assets/img/charac/webp/5.webp';
-import icon1 from '../../assets/img/icons/topIcon3.png';
-import icon2 from '../../assets/img/icons/topIcon2.png';
+import teamImg1 from '../../assets/img/team_images/1.png';
+import teamImg2 from '../../assets/img/team_images/2.png';
+import icon1 from '../../assets/img/icons/topIcon3.svg';
+import icon2 from '../../assets/img/icons/topIcon2.svg';
 
 export const Team = () => {
     return (

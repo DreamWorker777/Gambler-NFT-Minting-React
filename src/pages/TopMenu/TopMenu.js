@@ -3,12 +3,12 @@ import { Link } from 'react-scroll'
 
 import './TopMenu.scss';
 
-import logo from '../../assets/logo.png';
-import topIcon1 from '../../assets/img/icons/topIcon1.png';
-import topIcon2 from '../../assets/img/icons/topIcon2.png';
-import topIcon3 from '../../assets/img/icons/topIcon3.png';
+import logo from '../../assets/img/icons/logo.svg';
+import topIcon1 from '../../assets/img/icons/topIcon1.svg';
+import topIcon2 from '../../assets/img/icons/topIcon2.svg';
+import topIcon3 from '../../assets/img/icons/topIcon3.svg';
 
-import menuIcon from '../../assets/img/icons/menu.png';
+import menuIcon from '../../assets/img/icons/menu.svg';
 
 const menu = [
     "team", "roadmap", "rarity", "about", "home"
