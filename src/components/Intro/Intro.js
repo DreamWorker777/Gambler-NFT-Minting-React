@@ -1,6 +1,6 @@
 import './Intro.scss';
 
-import character from '../../assets/img/charac/1.png';
+import character from '../../assets/img/website_art/1.webp';
 
 const Main = () => {
     return (

@@ -4,18 +4,23 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
 import './About.scss';
-import back from '../../assets/img/bg/webp/1.webp';
+import back from '../../assets/img/website_art/2.webp';
+import pic from '../../assets/img/website_art/3.webp';
 import tag from '../../assets/img/tags/1.png';
-import pic from '../../assets/img/bg/webp/2.webp';
 
-import slideImg1 from '../../assets/img/charac/webp/3.webp';
-import slideImg2 from '../../assets/img/charac/webp/4.webp';
-import slideImg3 from '../../assets/img/charac/webp/5.webp';
-import slideImg4 from '../../assets/img/charac/webp/6.webp';
-import slideImg5 from '../../assets/img/charac/webp/7.webp';
+import slideImg1 from '../../assets/img/gallery/1.png';
+import slideImg2 from '../../assets/img/gallery/2.png';
+import slideImg3 from '../../assets/img/gallery/3.png';
+import slideImg4 from '../../assets/img/gallery/4.png';
+import slideImg5 from '../../assets/img/gallery/5.png';
+import slideImg6 from '../../assets/img/gallery/6.png';
+import slideImg7 from '../../assets/img/gallery/7.png';
+import slideImg8 from '../../assets/img/gallery/8.png';
+import slideImg9 from '../../assets/img/gallery/9.png';
+import slideImg10 from '../../assets/img/gallery/10.png';
 
 const slideImages = [
-    slideImg1, slideImg2, slideImg3, slideImg4, slideImg5, slideImg1, slideImg2, slideImg3, slideImg4, slideImg5
+    slideImg1, slideImg2, slideImg3, slideImg4, slideImg5, slideImg6, slideImg7, slideImg8, slideImg9, slideImg10
 ];
 
 const SlideShow = () => {
