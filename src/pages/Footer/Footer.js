@@ -1,8 +1,12 @@
 import './Footer.scss';
 import logo from '../../assets/img/icons/logo_white.png';
-import logoText from '../../assets/logoText.png';
+import { Link } from 'react-scroll'
 
 export const Footer = () => {
+    const menu = [
+        "team", "roadmap", "rarity", "about"
+    ];
+
     return (
         <div className="footer container">
             <div className="footer__content">
@@ -14,10 +18,19 @@ export const Footer = () => {
                 </div>
 
                 <div className="footer__content__menu">
-                    <a href="#javascript">TEAM</a>
-                    <a href="#javascript">ROADMAP</a>
-                    <a href="#javascript">RARITY</a>
-                    <a href="#javascript">ABOUT</a>
+                    {
+                        menu.map((item, index) => (
+                            <Link
+                                key={index}
+                                smooth={true} 
+                                duration={500} 
+                                spy={true} 
+                                to={ item }
+                            >
+                                { item.toUpperCase() }
+                            </Link>
+                        ))
+                    }
                 </div>
 
                 <div className="footer__content__policy">
@@ -27,9 +40,9 @@ export const Footer = () => {
                 </div>
 
                 <div className="footer__content__community">
-                    <a href="#javascript">JOIN DISCORD</a>
-                    <a href="#javascript">TWITTWER</a>
-                    <a href="#javascript">INSTAGRAM</a>
+                    <a href="https://discord.gg/cyberunners">JOIN DISCORD</a>
+                    <a href="https://twitter.com/cyberunners">TWITTWER</a>
+                    <a href="https://instagram.com/cyberunners">INSTAGRAM</a>
                 </div>
             </div>
 

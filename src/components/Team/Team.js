@@ -19,16 +19,16 @@ export const Team = () => {
                             <img alt="people" src={teamImg1}></img>
                             <p className="team__members__content__people__name">TheHexaMan</p>
                             <p className="team__members__content__people__desc">Co-Creator, Creative Director and Project Manager</p>
-                            <a href="#javascript;"><img alt="icon" className="team__members__content__people__firstIcon" src={icon1}></img></a>
-                            <a href="#javascript;"><img alt="icon" className="team__members__content__people__firstIcon" src={icon2}></img></a>
+                            <a href="https://twitter.com/TheHexaMan"><img alt="icon" className="team__members__content__people__firstIcon" src={icon1}></img></a>
+                            <a href="https://www.instagram.com/thehexaman"><img alt="icon" className="team__members__content__people__firstIcon" src={icon2}></img></a>
                         </div>
 
                         <div style={{ paddingLeft: '5vw', paddingRight: '0' }}>
                             <img alt="people" src={teamImg2}></img>
                             <p className="team__members__content__people__name">Kristina</p>
-                            <p className="team__members__content__people__desc">Co-Creator, Illustrator & Graphic Artist</p>
-                            <a href="#javascript;"><img alt="icon" className="team__members__content__people__secondIcon" src={icon1}></img></a>
-                            <a href="#javascript;"><img alt="icon" className="team__members__content__people__secondIcon" src={icon2}></img></a>
+                            <p className="team__members__content__people__desc">Co-Creator, Illustrator and Graphic Artist</p>
+                            <a href="https://twitter.com/the__Mess"><img alt="icon" className="team__members__content__people__secondIcon" src={icon1}></img></a>
+                            <a href="https://www.instagram.com/kristina__kerstner"><img alt="icon" className="team__members__content__people__secondIcon" src={icon2}></img></a>
                         </div>
                     </div>
                 </div>

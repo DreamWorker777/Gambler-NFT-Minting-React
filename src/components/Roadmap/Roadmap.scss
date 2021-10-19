@@ -221,8 +221,27 @@
             }
 
             &__slides {
-                padding-left: 17vw;
-                padding-right: 15vw;
+                padding-left: 22vw;
+                padding-right: 20vw;
+            }
+
+            &__eachItem {
+                &__index {
+                    font-size: 3vw;
+                    line-height: 3vw;
+                }
+    
+                &__title {
+                    font-size: 3.5vw;
+                    line-height: 3.5vw;
+                    /* identical to box height */
+                }
+    
+                &__content {
+                    padding: 2vw;
+                    font-size: 2.5vw;
+                    line-height: 2.5vw;
+                }
             }
 
             &__eachItem__line {

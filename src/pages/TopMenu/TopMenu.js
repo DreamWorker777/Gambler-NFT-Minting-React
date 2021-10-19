@@ -32,9 +32,9 @@ const TopButtons = () => {
         <div className="topMenu__menu">
             <button className="topMenu__menu__walletBtn" onClick={ connectWallet } >CONNECT WALLET</button>
             <div className="topMenu__menu__icons">
-                <a href="#javascript;"><img src={ topIcon1 } alt="logo"></img></a>
-                <a href="#javascript;"><img src={ topIcon2 } alt="logo"></img></a>
-                <a href="#javascript;"><img src={ topIcon3 } alt="logo"></img></a>
+                <a href="https://discord.gg/cyberunners"><img src={ topIcon1 } alt="logo"></img></a>
+                <a href="https://twitter.com/cyberunners"><img src={ topIcon2 } alt="logo"></img></a>
+                <a href="https://instagram.com/cyberunners"><img src={ topIcon3 } alt="logo"></img></a>
             </div>
 
             <div className="topMenu__menu__dropDownMenu">
@@ -48,7 +48,6 @@ const TopButtons = () => {
                                 duration={500} 
                                 spy={true} 
                                 to={ item }
-                                offset={ 5 }
                             >
                                 { item.toUpperCase() }
                             </Link>

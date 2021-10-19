@@ -38,30 +38,29 @@ const SlideShow = () => {
             content: `
                 <p>A collection is nothing without its community which is why we want to celebrate</p>
                 <p>the talents of our members through our planned collaborative projects:</p>
-                <p className="mt">-CYBERUNNERS Comic Based on Community Lore.</p>
-                <p>- Derivative Artwork Competitions.</p>
+                <p className="mt">- Community Youtube LoFi/synthwave Channel.</p>
                 <p>- CYBERUNNERS X COMMUNITY NFT Collection.</p>
-                <p>- CYBERUNNERS Short Film.</p>
-                <p>- Community Youtube LoFi Channel.</p>
+                <p>- CYBERUNNERS Comic Based on Community Lore.</p>
+                <p>- CYBERUNNERS Short Film / TV Show Pilot.</p>
             `
         }, {
             index: 'P04',
             title: 'THE CYBERNET',
             content: `
-                <p>We will take CYBERUNNERS further into the metaverse! Virtual experiences will</p>
+                <p>CYBERUNNERS will venture further into the metaverse! Virtual experiences will</p>
                 <p>be created to allow the community to meet and interact with each other, discover</p>
-                <p>community works, join exclusive events and to dive deeper into the Cyberverse! </p>
+                <p>community works, join exclusive events and to dive deeper into the Cyberverse!</p>
             `
         }, {
             index: 'P05',
-            title: 'THE FUTURE',
+            title: 'THE FUTURE OF CYBERUNNERS',
             content: `
                 <p>We are excited about the future of CYBERUNNERS and the different potentials that</p>
                 <p>it can grow into. Our passion for the Cyberverse will continue to grow and evolve</p>
-                <p>and we hope to expAnd the vibrant universe we have created into different artistic</p>
-                <p>mediums and to share it with the rest of the world. Perhaps we can start our very</p>
-                <p>own TV Show, Trading Cards or even physical collectables. The possibilites for the </p>
-                <p>future are endless and we look forward to having you with us on every step of the way!</p>
+                <p>and we hope to expand the vibrant universe we have created into different artistic</p>
+                <p>mediums. We are currently exploring ventures such as starting our very own TV Show, </p>
+                <p>Trading Cards or even physical collectables. The possibilities for the future are endless </p>
+                <p>and we look forward to having you with us on every step of the way!</p>
             `
         }
     ]
