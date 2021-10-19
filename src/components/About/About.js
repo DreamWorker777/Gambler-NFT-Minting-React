@@ -45,16 +45,21 @@ const SlideShow = () => {
             slideRef.current.goBack();
     }
 
-    useState(() => {
+    const initialSlideCount = () => {
+        if( window.innerWidth > 1500 )
+            setSlideCount(7);
+        else if( window.innerWidth > 768 )
+            setSlideCount(5);
+        else
+            setSlideCount(3);
+    }
+
+    useEffect(() => {
+        initialSlideCount();
         setInterval(() => {
-            if( window.innerWidth > 1500 )
-                setSlideCount(7);
-            else if( window.innerWidth > 768 )
-                setSlideCount(5);
-            else
-                setSlideCount(3);
+            initialSlideCount();
         }, 100);
-    })
+    }, [])
 
     return (
         <Slide easing="ease" {...properties}  slidesToShow={slideCount} onWheel={ mouseWheelEvent } ref={ slideRef }>
@@ -71,7 +76,7 @@ const SlideShow = () => {
 const About = () => {
     return (
         <div className="about" id="about">
-            <img alt="background" className="about__back" src={back}></img>
+            <img alt="background" className="about__back container" src={back}></img>
             <div className="about__content container">
                 <img alt="tag" className="about__content__tag" src={tag}></img>
 
@@ -81,10 +86,10 @@ const About = () => {
                             <span>8,888</span> uniquely illustrated rebels from the dystopian future.
                         </p>
                         <p>
-                            The collection draws inspiration from popculture dystopian classics such as Akira, Ghost in the Shell, Bladrunner and Mad Max.
+                            The collection draws inspiration from pop culture classics such as Akira, Ghost in the Shell, Bladerunner and Mad Max.
                         </p>
                         <p className="about__content__desc__bottom">
-                            Each aspect was created with passion and strong attention to detail to ensure each CYBERUNNER was essentric and true to the universe we have created.
+                            Each aspect was created with passion and strong attention to detail to ensure each CYBERUNNER was eccentric and true the universe we have created.
                         </p>
                     </div>
                     

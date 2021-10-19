@@ -1,11 +1,13 @@
 .join {
     position: relative;
 
-    img {
+    &__back {
         width: 100%;
+        max-width: 1400px;
         position: relative;
-        left: 0;
-        right: 0;
+        padding: 0 60px;
+        transform: translateX(-50%);
+        left: 50%;
     }
 
     .container {
@@ -112,6 +114,8 @@
         }
     
         &__popup {
+            margin-top: -5px;
+
             position: relative;
             z-index: 100;
             width: 100vw;
