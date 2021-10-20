@@ -25,7 +25,7 @@ const TopLogo = () => {
 
 const TopButtons = () => {
     const connectWallet = () => {
-        NotificationManager.info('Sorry, metamask wallet connection is currently unavailable, please comeback on drop day');
+        NotificationManager.info('Metamask Wallet connection currently unavailable! Please retry on launch date.');
     }
 
     return (
