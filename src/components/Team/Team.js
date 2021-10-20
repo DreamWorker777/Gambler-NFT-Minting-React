@@ -1,5 +1,5 @@
 import './Team.scss';
-import tag from '../../assets/img/tags/5.png';
+import tag from '../../assets/img/tags/5.svg';
 import teamImg1 from '../../assets/img/team_images/1.png';
 import teamImg2 from '../../assets/img/team_images/2.png';
 
@@ -9,13 +9,15 @@ import instagramRed from '../../assets/img/icons/instagram-red.svg';
 import twitterBlue from '../../assets/img/icons/twitter-blue.svg';
 import twitterRed from '../../assets/img/icons/twitter-red.svg';
 
+import title from '../../assets/img/font_svg/theteam-text.svg';
+
 export const Team = () => {
     return (
         <div className="team container" id="team">
             <div className="team__members">
                 <img alt="tag" className="team__members__tag" src={tag}></img>
                 <div className="team__members__content">
-                    <p className="team__members__content__title">THE TEAM</p>
+                    <img alt="title" className="team__members__content__title" src={title}></img>
                     <p className="team__members__content__desc">MEET THE ARTISTS BEHIND CYBERUNNERS!</p>
 
                     <div className="team__members__content__people">

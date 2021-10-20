@@ -3,9 +3,10 @@ import React, { useState, useEffect } from 'react';
 import 'react-slideshow-image/dist/styles.css'
 
 import './Roadmap.scss';
-import tag from '../../assets/img/tags/6.png';
+import tag from '../../assets/img/tags/6.svg';
 import postTag from '../../assets/img/tags/4.png';
 import back from '../../assets/img/website_art/5.webp';
+import title from '../../assets/img/font_svg/roadmap-text.svg';
 
 const SlideShow = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -97,7 +98,7 @@ const SlideShow = () => {
                                 <span></span>
                             </div>
 
-                            <div className={`roadmap__post__eachItem ${ currentIndex === index ? 'active' : '' }`} >
+                            <div className={`roadmap__post__eachItem ${ index === 0 ? 'active' : '' }`} >
                                 <p className="roadmap__post__eachItem__index">{each.index}</p>
                                 <p className="roadmap__post__eachItem__title">{each.title}</p>
                                 <div 
@@ -122,7 +123,7 @@ export const RoadMap = () => {
                     <img alt="tag" className="roadmap__content__tag" src={tag}></img>
                     <div className="roadmap__content__desc">
                         <div>
-                            <p className="roadmap__content__desc__title">ROADMAP</p>
+                            <img alt="title" className="roadmap__content__desc__title" src={title}></img>
                             <p className="roadmap__content__desc__first">Our vision for the future of CYBERUNNERS is filled with many exciting milestones to look forward to. This will not only include special utilities for our holders, but for the community at large!</p>
                             <p className="roadmap__content__desc__second">*Roadmap might not be rolled out in a sequential manner; different phases could commence concurrently.</p>
                         </div>

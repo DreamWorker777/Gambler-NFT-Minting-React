@@ -14,12 +14,7 @@
 
         &__textWhite {
             position: absolute;
-            font-family: Vermin Vibes;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 7vw;
-            color: white;
-
+            width: 75vw;
             top: 25vw;
             transform: translate3d(-50%, -50%, 0);
             left: 50%;
@@ -28,15 +23,8 @@
 
         &__textBorder {
             position: absolute;
-
-            font-family: Vermin Vibes;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 7vw;
-            color: transparent;
-            -webkit-text-stroke: 1px #ffffff;
-
-            top: 35vw;
+            width: 75vw;
+            top: 40vw;
             transform: translate3d(-50%, -50%, 0);
             left: 50%;
             z-index: 3;
@@ -152,15 +140,15 @@
         &__main {
             &__charac {
                 width: 45vw;
-                margin-top: 18%;
+                margin-top: 22%;
             }
     
             &__textWhite {    
-                top: 35vw;
+                top: 40vw;
             }
     
             &__textBorder {
-                top: 45vw;
+                top: 55vw;
             }
         }
 
@@ -210,12 +198,16 @@
 @media (min-width: 400px) and (max-width: 768px) {
     .intro {
         &__main {
-            &__textWhite {    
-                top: 30vw;
+            &__charac {
+                margin-top: 20%;
+            }
+
+            &__textWhite {
+                top: 37vw;
             }
     
             &__textBorder {
-                top: 40vw;
+                top: 52vw;
             }
         }
         
@@ -270,13 +262,13 @@
             }
     
             &__textWhite {
-                font-size: 15vh;
+                width: 150vh;
                 top: 40vh;
             }
     
             &__textBorder {
-                font-size: 15vh;
-                top: 60vh;
+                width: 150vh;
+                top: 65vh;
             }
         }
     
@@ -313,57 +305,4 @@
             }
         }
     }
-
-
-    // .intro {
-    //     max-width: 1400px;
-    //     position: relative;
-    //     padding: 0 60px;
-    //     transform: translateX(-50%);
-    //     left: 50%;
-
-    //     &__main {
-    //         &__textWhite {
-    //             font-size: 110px;
-    //             top: 300px;
-    //         }
-
-    //         &__textBorder {
-    //             font-size: 110px;
-    //             top: 500px;
-    //         }
-    //     }
-
-    //     &__date {
-    //         top: 600px;
-    //         right: 150px;
-
-    //         &__dropText {
-    //             padding: 6px;
-            
-    //             font-size: 21px;
-    //             line-height: 20px;
-    //         }
-    
-    //         &__launchText {
-    //             padding: 6px;
-            
-    //             font-size: 14px;
-    //             line-height: 14px;
-    //         }
-    
-    //         &__initializeText {
-    //             background-color: #1CD2F9;
-    //             padding: 5px 10px;
-                
-    //             font-weight: normal;
-    //             font-size: 12px;
-    //             line-height: 12px;
-    //         }
-    
-    //         &__show {
-    //             font-size: 50px;
-    //         }
-    //     }
-    // }
 }

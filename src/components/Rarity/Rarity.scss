@@ -32,13 +32,8 @@
             }
 
             &__title {
-                font-family: Vermin Vibes;
-                font-weight: normal;
-                font-size: 5vw;
-                line-height: 5vw;
-                /* identical to box height, or 88% */
-                
-                color: #4F3E72 !important;
+                width: 23vw;
+
                 margin-block-start: 4vw;
                 margin-block-end: 4vw;
             }
@@ -199,6 +194,8 @@
 
                 img {
                     width: 100%;
+                    position: relative;
+                    bottom: 70%;
                 }
             }
 
@@ -271,9 +268,7 @@
                 }
     
                 &__title {
-                    font-size: 75px;
-                    line-height: 75px;
-                    /* identical to box height, or 88% */
+                    width: 345px;
                     
                     margin-block-start: 60px;
                     margin-block-end: 60px;

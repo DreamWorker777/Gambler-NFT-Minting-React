@@ -6,7 +6,7 @@ import 'react-slideshow-image/dist/styles.css'
 import './About.scss';
 import back from '../../assets/img/website_art/2.webp';
 import pic from '../../assets/img/website_art/3.webp';
-import tag from '../../assets/img/tags/1.png';
+import tag from '../../assets/img/tags/1.svg';
 
 import slideImg1 from '../../assets/img/gallery/1.png';
 import slideImg2 from '../../assets/img/gallery/2.png';

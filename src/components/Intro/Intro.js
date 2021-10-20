@@ -1,13 +1,15 @@
 import './Intro.scss';
 
 import character from '../../assets/img/website_art/1.webp';
+import textFilled from '../../assets/img/font_svg/cyberunners-text-filled.svg';
+import textInline from '../../assets/img/font_svg/cyberunners-text-inline.svg';
 
 const Main = () => {
     return (
         <div className="intro__main container">
-            <div className="intro__main__textWhite">CYBERUNNERS</div>
+            <img src={ textFilled } className="intro__main__textWhite" alt="textfilled"></img>
             <img src={ character } className="intro__main__charac" alt="logo"></img>
-            <div className="intro__main__textBorder">CYBERUNNERS</div>
+            <img src={ textInline } className="intro__main__textBorder" alt="textinline"></img>
         </div>
     )
 }

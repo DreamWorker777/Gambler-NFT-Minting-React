@@ -17,17 +17,7 @@
             padding-top: 4vw;
 
             &__title {
-                font-family: Vermin Vibes;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 4vw;
-                line-height: 4vw;
-                /* identical to box height */
-
-
-                /* WHITTE */
-
-                color: #FFFFFF;
+                width: 25vw;
 
                 margin-block-start: 1vw;
                 margin-block-end: 1vw;
@@ -125,8 +115,7 @@
                 padding-top: 15vw;
     
                 &__title {
-                    font-size: 5vw;
-                    line-height: 4vw;
+                    width: 35vw;
     
                     margin-block-start: 1vw;
                     margin-block-end: 1vw;
@@ -199,8 +188,7 @@
                 padding-top: 60px;
     
                 &__title {
-                    font-size: 60px;
-                    line-height: 60px;
+                    width: 375px !important;
     
                     margin-block-start: 15px;
                     margin-block-end: 15px;
