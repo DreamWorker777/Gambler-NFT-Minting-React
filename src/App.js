@@ -17,7 +17,6 @@ import Footer from './pages/Footer/Footer';
 import TopMenu from './pages/TopMenu/TopMenu';
 import Join from './pages/Join/Join';
 
-// import LoadingImg from './assets/img/tags/5.png';
 import LoadingImg from './assets/img/icons/logo.svg';
 
 const Loading = ({ isLoading }) => {

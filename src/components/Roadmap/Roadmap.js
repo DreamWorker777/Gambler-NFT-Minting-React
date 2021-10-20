@@ -4,7 +4,7 @@ import 'react-slideshow-image/dist/styles.css'
 
 import './Roadmap.scss';
 import tag from '../../assets/img/tags/6.svg';
-import postTag from '../../assets/img/tags/4.png';
+import postTag from '../../assets/img/tags/4.svg';
 import back from '../../assets/img/website_art/5.webp';
 import title from '../../assets/img/font_svg/roadmap-text.svg';
 
