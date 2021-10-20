@@ -43,7 +43,7 @@ export const Footer = () => {
 
                 <div className="footer__content__community">
                     <a href="https://discord.gg/cyberunners">JOIN DISCORD</a>
-                    <a href="https://twitter.com/cyberunners">TWITTWER</a>
+                    <a href="https://twitter.com/cyberunners">TWITTER</a>
                     <a href="https://instagram.com/cyberunners">INSTAGRAM</a>
                 </div>
             </div>
