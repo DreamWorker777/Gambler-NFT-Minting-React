@@ -1,4 +1,6 @@
 .about {
+    margin-top: -5px;
+
     position: relative;
     z-index: 10;
     background: linear-gradient(180deg, #D64C6E 0%, #EE5272 66.73%);
@@ -63,6 +65,7 @@
     }
 
     &__slider {
+        margin-top: -5px;
         background-color: #191919;
         position: relative;
         z-index: 11;
@@ -82,8 +85,8 @@
         }
 
         .indicator {
-            width: calc(6vw);
-            height: calc(1vw);
+            width: calc(5vw);
+            height: calc(0.5vw);
             margin: calc(1vw);
             cursor: pointer;
             border: unset;
@@ -172,6 +175,12 @@
         }
 
         &__slider {
+            .indicator {
+                width: 75px;
+                height: 7.5px;
+                margin: 15px;
+            }
+
             &__eachItem {
                 display: flex;
                 justify-content: center;

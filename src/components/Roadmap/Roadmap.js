@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
@@ -9,18 +9,17 @@ import postTag from '../../assets/img/tags/4.png';
 import back from '../../assets/img/website_art/5.webp';
 
 const SlideShow = () => {
-    const slideRef = useRef();
     const [currentIndex, setCurrentIndex] = useState(0);
     const [mobile, setMobile] = useState(false);
-
+    
     const slides = [
         {
             index: 'P01',
             title: 'THE LAUNCH',
             content: `
-                <p>We are currently working hard on finalizing the CYBERUNNER collection.</p>
+                <p>We are currently working hard on finalizing the CYBERUNNERS collection.</p>
                 <p>We will be making constant announcements on our Discord to keep our community</p>
-                <p>updated with our progress. This will include exclusive look into the project,</p>
+                <p>updated with our progress. This will include exclusive insight into the project,</p>
                 <p>behind the scenes content and getting our members involved with suggestions</p>
                 <p>to ensure a satisfactory and successful launch!</p>
             `
@@ -36,7 +35,7 @@ const SlideShow = () => {
             index: 'P03',
             title: 'CYBERUNNERS X COMMUNITY',
             content: `
-                <p>A collection is nothing without its community which is why we want to celebrate</p>
+                <p>A collection is nothing without its community, which is why we want to celebrate</p>
                 <p>the talents of our members through our planned collaborative projects:</p>
                 <p className="mt">- Community Youtube LoFi/synthwave Channel.</p>
                 <p>- CYBERUNNERS X COMMUNITY NFT Collection.</p>
@@ -58,34 +57,21 @@ const SlideShow = () => {
                 <p>We are excited about the future of CYBERUNNERS and the different potentials that</p>
                 <p>it can grow into. Our passion for the Cyberverse will continue to grow and evolve</p>
                 <p>and we hope to expand the vibrant universe we have created into different artistic</p>
-                <p>mediums. We are currently exploring ventures such as starting our very own TV Show, </p>
-                <p>Trading Cards or even physical collectables. The possibilities for the future are endless </p>
+                <p>mediums. We are currently exploring ventures such as starting our very own TV Show,</p>
+                <p>Trading Cards or even physical collectables. The possibilities for the future are endless</p>
                 <p>and we look forward to having you with us on every step of the way!</p>
             `
         }
-    ]
-
-    const properties = {
-        duration: 3000,
-        transitionDuration: 500,
-        infinite: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
-        indicators: false,
-        autoplay: false,
-        onChange: () => {
-            setTimeout(() => {
-                setCurrentIndex( slideRef.current.state.index );
-            }, 100)
-        }
-    };
+    ];
 
     const goToIndex = ( idx ) => {
-        slideRef.current.goTo(idx);
+        setCurrentIndex(idx);
+        
+        if( idx === 4 )
+            return;   
     }
 
-    useState(() => {
+    useEffect(() => {
         setInterval(() => {
             if( window.innerWidth > 768 )
                 setMobile(false);
@@ -96,24 +82,29 @@ const SlideShow = () => {
 
     return (
             !mobile ?
-                <Slide easing="ease" {...properties} ref={ slideRef }>
-                    {slides.map((each, index) => (
-                        <div key={index} className={`roadmap__post__eachItem ${ currentIndex === index ? 'active' : '' }`} onClick={() => goToIndex(index)}>
-                            <p className="roadmap__post__eachItem__index">{each.index}</p>
-                            <p className="roadmap__post__eachItem__title">{each.title}</p>
-                            <div 
-                                className="roadmap__post__eachItem__content" 
-                                dangerouslySetInnerHTML={{
-                                    __html: each.content
-                                }}>
+                <div className="roadmap__post__slidesWrapper">
+                    <div className="roadmap__post__slidesFlex" style={{ marginLeft: `calc(25% - 50% * ${currentIndex})` }}>
+                        {slides.map((each, index) => (
+                            <div key={index} className={`roadmap__post__eachItem ${ currentIndex === index ? 'active' : '' }`} onClick={() => goToIndex(index)}>
+                                <div style={{ display: 'flex' }}>
+                                    <p className="roadmap__post__eachItem__index">{each.index}</p>
+                                    { index !== 4 ? <div className="roadmap__post__eachItem__index__line"></div> : null}
+                                </div>
+                                <p className="roadmap__post__eachItem__title">{each.title}</p>
+                                <div 
+                                    className="roadmap__post__eachItem__content" 
+                                    dangerouslySetInnerHTML={{
+                                        __html: each.content
+                                    }}>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </Slide> : (
+                        ))}
+                    </div>
+                </div> : (
                 <div className="roadmap__post__slides">
                     {slides.map((each, index) => (
                         <div key={index} style={{ position: 'relative' }} >
-                            <div className={`roadmap__post__eachItem__line ${ index == 4 ? 'end' : '' }`}>
+                            <div className={`roadmap__post__eachItem__line ${ index === 4 ? 'end' : '' }`}>
                                 <span></span>
                             </div>
 
@@ -143,8 +134,8 @@ export const RoadMap = () => {
                     <div className="roadmap__content__desc">
                         <div>
                             <p className="roadmap__content__desc__title">ROADMAP</p>
-                            <p className="roadmap__content__desc__first">Our vision for the future of CYBERUNNERS is filled with many exciting milestones to look forward to. We hope to expand the Cyberverse to many mediums to create an extensive universe for our supporters to explore!</p>
-                            <p className="roadmap__content__desc__second">Roadmap wil not be rolled out in a sequential manner but might have two or more phases happening concurently.</p>
+                            <p className="roadmap__content__desc__first">Our vision for the future of CYBERUNNERS is filled with many exciting milestones to look forward to. This will not only include special utilities for our holders, but for the community at large!</p>
+                            <p className="roadmap__content__desc__second">*Roadmap might not be rolled out in a sequential manner; different phases could commence concurrently.</p>
                         </div>
                     </div>
                     <div className="roadmap__content__back">

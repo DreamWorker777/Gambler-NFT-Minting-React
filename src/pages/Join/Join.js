@@ -5,13 +5,13 @@ import back from '../../assets/img/website_art/6.webp';
 export const Join = () => {
     return (
         <div className="join">
-            <img alt="back" src={back}></img>
+            <img className="join__back" alt="back" src={back}></img>
             <div className="container">
                 <div className="join__popup">
                     <div>
                         <p className="join__popup__title">BECOME A CYBERUNNER</p>
                         <p className="join__popup__desc">The rich and colourful Cyberverse is waiting to be explored by you. Make sure to join our community to start your adventure!</p>
-                        <button className="join__popup__button">
+                        <button className="join__popup__button" onClick={() => { window.location.href = "https://discord.gg/cyberunners" }}>
                             <img alt="icon" src={icon3}></img>
                             JOIN DISCORD
                         </button>

@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 
 export const Footer = () => {
     const menu = [
-        "team", "roadmap", "rarity", "about"
+        "about", "rarity", "roadmap", "team",
     ];
 
     return (
@@ -33,11 +33,11 @@ export const Footer = () => {
                     }
                 </div>
 
-                <div className="footer__content__policy">
+                {/* <div className="footer__content__policy">
                     <a href="#javascript">TERMS & CONDITIONS</a>
                     <a href="#javascript">PRIVACY POLICY</a>
                     <a href="#javascript">SMART CONTRACTS</a>
-                </div>
+                </div> */}
 
                 <div className="footer__content__community">
                     <a href="https://discord.gg/cyberunners">JOIN DISCORD</a>

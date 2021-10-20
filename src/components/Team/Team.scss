@@ -1,4 +1,6 @@
 .team {
+    z-index: 12;
+
     &__members {
         position: relative;
         background: #191919;
@@ -60,7 +62,13 @@
                     a {
                         display: inline-block;
                         margin-right: 1vw;
+                        display: flex;
                     }
+                }
+
+                .socialIcons {
+                    display: flex;
+                    padding: 0;
                 }
 
                 &__name {
@@ -149,6 +157,10 @@
                         a {
                             margin-right: 2vw;
                         }
+                    }
+
+                    .socialIcons {
+                        justify-content: center;
                     }
     
                     &__name {

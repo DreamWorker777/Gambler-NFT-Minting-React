@@ -1,10 +1,10 @@
 import {
-	BrowserRouter as Router,
+	// BrowserRouter as Router,
 	Switch,
 	Route,
   } from "react-router-dom";
 
-import NavBar from '../../components/Navigation/nav';
+// import NavBar from '../../components/Navigation/nav';
 
 import Create from '../../components/Mint/Create/Create';
 

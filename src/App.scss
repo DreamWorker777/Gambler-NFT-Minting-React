@@ -14,12 +14,13 @@
   font-family: 'Bank Sans EF CY';
   font-weight: 300;
   src: local('Bank Sans EF CY'),
-       url('./assets/fonts/Bank Sans EF CY.otf') format('truetype'), /* Super Modern Browsers */
+       url('./assets/fonts/Bank Sans EF CY Light.otf') format('truetype'), /* Super Modern Browsers */
 }
 
 @font-face {  
   font-family: 'Vermin Vibes';
-  src: url('./assets/fonts/VerminVibesV-Zlg3.ttf') format('truetype'); /* Super Modern Browsers */
+  src: url('./assets/fonts/vermin_vibes/VerminVibes.ttf') format('truetype');
+  src: url('./assets/fonts/VerminVibesV-Zlg3.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -58,7 +59,7 @@
 
 	img {
     position: fixed;
-		width: 200px;
+		width: 150px;
 		transform: translate3d(-50%, -50%, 0);
     left: 50%;
     top: 50%;

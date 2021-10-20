@@ -7,10 +7,9 @@
 
         &__charac {
             width: 45%;
-            top: calc(5%);
             z-index: 2;
             position: relative;
-            margin-top: 10%;
+            margin-top: 14%;
         }
 
         &__textWhite {
@@ -21,7 +20,7 @@
             font-size: 7vw;
             color: white;
 
-            top: 21vw;
+            top: 25vw;
             transform: translate3d(-50%, -50%, 0);
             left: 50%;
             z-index: 1;
@@ -37,11 +36,15 @@
             color: transparent;
             -webkit-text-stroke: 1px #ffffff;
 
-            top: 33vw;
+            top: 35vw;
             transform: translate3d(-50%, -50%, 0);
             left: 50%;
             z-index: 3;
         }
+    }
+
+    &__dateWrapper {
+        margin-top: -5px;
     }
 
     &__date {
@@ -144,10 +147,78 @@
     }
 }
 
+@media (min-width: 0px) and (max-width: 400px) {
+    .intro {
+        &__main {
+            &__charac {
+                width: 45vw;
+                margin-top: 18%;
+            }
+    
+            &__textWhite {    
+                top: 35vw;
+            }
+    
+            &__textBorder {
+                top: 45vw;
+            }
+        }
+
+        &__dateWrapper {
+            width: 60vw;
+            background-color: #1CD2F9;
+            padding: 14vw 20vw;
+            position: relative;
+        }
+
+        &__date {
+            position: unset;
+            display: block;
+            width: 100%;
+
+            &__dropText {
+                padding: 0.4vw;
+            
+                font-size: 3.5vw;
+                line-height: 3.2vw;
+            }
+    
+            &__launchText {
+                padding: 0.4vw;
+            
+                font-size: 2vw;
+                line-height: 2vw;
+            }
+    
+            &__initializeText {
+                background-color: #1CD2F9;
+                padding: 0.5vw 1vw;
+                
+                font-weight: normal;
+                font-size: 1.8vw;
+                line-height: 1.5vw;
+            }
+    
+            &__show {
+                font-size: 10vw;
+            }
+        }
+    }
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 0px) and (max-width: 768px) {
+@media (min-width: 400px) and (max-width: 768px) {
     .intro {
+        &__main {
+            &__textWhite {    
+                top: 30vw;
+            }
+    
+            &__textBorder {
+                top: 40vw;
+            }
+        }
+        
         &__dateWrapper {
             width: 60vw;
             background-color: #1CD2F9;
@@ -192,54 +263,107 @@
 
 @media (min-width: 1500px) {
     .intro {
-        max-width: 1400px;
-        position: relative;
-        padding: 0 60px;
-        transform: translateX(-50%);
-        left: 50%;
-
         &__main {
-            &__textWhite {
-                font-size: 110px;
-                top: 300px;
+            &__charac {
+                width: 70vh;
+                margin-top: 15vh;
             }
-
+    
+            &__textWhite {
+                font-size: 15vh;
+                top: 40vh;
+            }
+    
             &__textBorder {
-                font-size: 110px;
-                top: 500px;
+                font-size: 15vh;
+                top: 60vh;
             }
         }
-
+    
         &__date {
-            top: 600px;
-            right: 150px;
-
+            right: unset;
+            left: calc(50vw + 30vh);
+            bottom: 5vh;
+            top: unset;
+            width: 41vh;
+    
             &__dropText {
-                padding: 6px;
-            
-                font-size: 21px;
-                line-height: 20px;
+                padding: 0.8vh;
+
+                font-size: 3vh;
+                line-height: 2.4vh;
             }
     
             &__launchText {
-                padding: 6px;
-            
-                font-size: 14px;
-                line-height: 14px;
+                padding: 0.8vh;
+
+                font-size: 1.4vh;
+                line-height: 0.6vh;
             }
     
             &__initializeText {
-                background-color: #1CD2F9;
-                padding: 5px 10px;
-                
-                font-weight: normal;
-                font-size: 12px;
-                line-height: 12px;
+                padding: 1vh 2vh;
+
+                font-size: 1.2vh;
+                line-height: 0.6vh;
             }
     
             &__show {
-                font-size: 50px;
+                font-size: 6.2vh;
             }
         }
     }
+
+
+    // .intro {
+    //     max-width: 1400px;
+    //     position: relative;
+    //     padding: 0 60px;
+    //     transform: translateX(-50%);
+    //     left: 50%;
+
+    //     &__main {
+    //         &__textWhite {
+    //             font-size: 110px;
+    //             top: 300px;
+    //         }
+
+    //         &__textBorder {
+    //             font-size: 110px;
+    //             top: 500px;
+    //         }
+    //     }
+
+    //     &__date {
+    //         top: 600px;
+    //         right: 150px;
+
+    //         &__dropText {
+    //             padding: 6px;
+            
+    //             font-size: 21px;
+    //             line-height: 20px;
+    //         }
+    
+    //         &__launchText {
+    //             padding: 6px;
+            
+    //             font-size: 14px;
+    //             line-height: 14px;
+    //         }
+    
+    //         &__initializeText {
+    //             background-color: #1CD2F9;
+    //             padding: 5px 10px;
+                
+    //             font-weight: normal;
+    //             font-size: 12px;
+    //             line-height: 12px;
+    //         }
+    
+    //         &__show {
+    //             font-size: 50px;
+    //         }
+    //     }
+    // }
 }
