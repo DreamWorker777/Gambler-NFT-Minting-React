@@ -1,6 +1,5 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
 import './Roadmap.scss';
@@ -18,48 +17,38 @@ const SlideShow = () => {
             title: 'THE LAUNCH',
             content: `
                 <p>We are currently working hard on finalizing the CYBERUNNERS collection.</p>
-                <p>We will be making constant announcements on our Discord to keep our community</p>
-                <p>updated with our progress. This will include exclusive insight into the project,</p>
-                <p>behind the scenes content and getting our members involved with suggestions</p>
-                <p>to ensure a satisfactory and successful launch!</p>
+
+                <p>We will be making constant announcements on our Discord to keep our community updated with our progress. This will include exclusive insight into the project, behind the scenes content and getting our members involved with suggestions to ensure a satisfactory and successful launch!</p>
             `
         }, {
             index: 'P02',
             title: 'CYBER SOCIETY CLOTHING',
             content: `
-                <p>Our merchandise line will go live! We will be working with fashion designers</p>
-                <p>to create clothing that is innovative, visionary and true to the retro-punk</p>
-                <p>aesthetic of <span>CYBERUNNERS.</span></p>
+                <p>Our merchandise line will go live! We will be working with fashion designers to create clothing that is innovative, visionary and true to the retro-punk aesthetic of <span>CYBERUNNERS.</span></p>
             `
         }, {
             index: 'P03',
             title: 'CYBERUNNERS X COMMUNITY',
             content: `
-                <p>A collection is nothing without its community, which is why we want to celebrate</p>
-                <p>the talents of our members through our planned collaborative projects:</p>
-                <p className="mt">- Community Youtube LoFi/synthwave Channel.</p>
-                <p>- CYBERUNNERS X COMMUNITY NFT Collection.</p>
-                <p>- CYBERUNNERS Comic Based on Community Lore.</p>
-                <p>- CYBERUNNERS Short Film / TV Show Pilot.</p>
+                <p>A collection is nothing without its community, which is why we want to celebrate the talents of our members through our planned collaborative projects:</p>
+                <p className="mt" style="margin: 0">- Community Youtube LoFi/synthwave Channel.</p>
+                <p style="margin: 0">- CYBERUNNERS X COMMUNITY NFT Collection.</p>
+                <p style="margin: 0">- CYBERUNNERS Comic Based on Community Lore.</p>
+                <p style="margin: 0">- CYBERUNNERS Short Film / TV Show Pilot.</p>
             `
         }, {
             index: 'P04',
             title: 'THE CYBERNET',
             content: `
-                <p>CYBERUNNERS will venture further into the metaverse! Virtual experiences will</p>
-                <p>be created to allow the community to meet and interact with each other, discover</p>
-                <p>community works, join exclusive events and to dive deeper into the Cyberverse!</p>
+                <p>CYBERUNNERS will venture further into the metaverse!</p>
+                <p>Virtual experiences will be created to allow the community to meet and interact with each other, discover community works, join exclusive events and to dive deeper into the Cyberverse!</p>
             `
         }, {
             index: 'P05',
             title: 'THE FUTURE OF CYBERUNNERS',
             content: `
-                <p>We are excited about the future of CYBERUNNERS and the different potentials that</p>
-                <p>it can grow into. Our passion for the Cyberverse will continue to grow and evolve</p>
-                <p>and we hope to expand the vibrant universe we have created into different artistic</p>
-                <p>mediums. We are currently exploring ventures such as starting our very own TV Show,</p>
-                <p>Trading Cards or even physical collectables. The possibilities for the future are endless</p>
-                <p>and we look forward to having you with us on every step of the way!</p>
+                <p>We are excited about the future of CYBERUNNERS and the different potentials that it can grow into. Our passion for the Cyberverse will continue to grow and evolve and we hope to expand the vibrant universe we have created into different artistic mediums.</p>
+                <p>We are currently exploring ventures such as starting our very own TV Show, Trading Cards or even physical collectables. The possibilities for the future are endless and we look forward to having you with us on every step of the way!</p>
             `
         }
     ];
@@ -68,7 +57,7 @@ const SlideShow = () => {
         setCurrentIndex(idx);
         
         if( idx === 4 )
-            return;   
+            return;
     }
 
     useEffect(() => {

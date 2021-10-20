@@ -28,7 +28,7 @@ export const Team = () => {
                             </div>
                         </div>
 
-                        <div style={{ paddingLeft: '5vw', paddingRight: '0' }}>
+                        <div style={{ paddingRight: '0' }}>
                             <img alt="people" src={teamImg2}></img>
                             <p className="team__members__content__people__name">Kristina</p>
                             <p className="team__members__content__people__desc">Co-Creator, Illustrator and Graphic Artist</p>

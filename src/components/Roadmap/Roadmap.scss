@@ -27,6 +27,7 @@
         }
 
         &__back {
+            margin-top: 20vw;
             width: 45%;
 
             img {
@@ -195,6 +196,11 @@
                 .mt {
                     margin-top: 5vw;
                 }
+
+                p {
+                    margin-block-start: 1em;
+                    margin-block-end: 1em;
+                }
             }
 
             .active {
@@ -220,6 +226,10 @@
     .roadmap {
         &__content {
             padding: 0;
+
+            &__back {
+                margin-top: 0;
+            }
 
             &__desc {
                 width: 100%;
@@ -315,7 +325,11 @@
                 top: -75px;
                 left: 300px;
             }
-    
+
+            &__back {
+                margin-top: 300px;
+            }
+
             &__desc {
                 div {
                     padding-left: 60px;

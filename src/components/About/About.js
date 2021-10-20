@@ -76,7 +76,9 @@ const SlideShow = () => {
 const About = () => {
     return (
         <div className="about" id="about">
-            <img alt="background" className="about__back container" src={back}></img>
+            <div className="about__backImage__wrapper">
+                <img alt="background" className="about__back" src={back}></img>
+            </div>
             <div className="about__content container">
                 <img alt="tag" className="about__content__tag" src={tag}></img>
 

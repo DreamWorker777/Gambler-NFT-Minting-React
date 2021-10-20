@@ -5,7 +5,9 @@ import back from '../../assets/img/website_art/6.webp';
 export const Join = () => {
     return (
         <div className="join">
-            <img className="join__back" alt="back" src={back}></img>
+            <div className="join__back__wrapper">            
+                <img className="join__back" alt="back" src={back}></img>
+            </div>
             <div className="container">
                 <div className="join__popup">
                     <div>

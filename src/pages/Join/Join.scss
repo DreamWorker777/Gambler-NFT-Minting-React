@@ -3,11 +3,7 @@
 
     &__back {
         width: 100%;
-        max-width: 1400px;
         position: relative;
-        padding: 0 60px;
-        transform: translateX(-50%);
-        left: 50%;
     }
 
     .container {
@@ -75,7 +71,7 @@
             text-transform: uppercase;
 
             color: #1F254E;
-                        
+
             display: flex;
             text-align: center;
             justify-content: center;
@@ -100,7 +96,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
     .join {
         position: relative;
-    
+
         img {
             width: 100%;
             position: relative;
@@ -175,6 +171,16 @@
 
 @media (min-width: 1500px) {
     .join {
+        &__back__wrapper {
+            max-height: 750px;
+            overflow: hidden;
+        }
+
+        &__back {
+            position: relative;
+            top: -30vh;
+        }
+
         &__popup {
             width: 690px;
             height: 345px;
