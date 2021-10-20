@@ -2,6 +2,8 @@ import './Footer.scss';
 import logo from '../../assets/img/icons/logo.svg';
 import { Link } from 'react-scroll'
 
+import logoText from '../../assets/img/font_svg/cyberunners-text-logo.svg';
+
 export const Footer = () => {
     const menu = [
         "about", "rarity", "roadmap", "team",
@@ -13,7 +15,7 @@ export const Footer = () => {
                 <div className="footer__content__logo">
                     <div className="logo_wrapper">
                         <img src={logo} className="footer__content__logo__img" alt="logo"></img>
-                        <div className="footer__content__logo__text">CYBERUNNERS</div>
+                        <img src={logoText} className="footer__content__logo__text" alt="logotext"></img>
                     </div>
                 </div>
 

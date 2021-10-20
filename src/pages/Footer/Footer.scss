@@ -32,10 +32,7 @@
             }
 
             &__text {
-                font-size: 2vw;
-                line-height: 2vw;
-                color: white;
-                font-family: Vermin Vibes;
+                width: 20vw;
             }
         }
 
@@ -103,8 +100,7 @@
                 }
     
                 &__text {
-                    font-size: 4vw;
-                    line-height: 4vw;
+                    width: 40vw !important;
                 }
             }
     
@@ -152,8 +148,7 @@
                 }
     
                 &__text {
-                    font-size: 30px;
-                    line-height: 30px;
+                    width: 300px !important;
                 }
             }
 

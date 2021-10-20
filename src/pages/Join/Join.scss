@@ -37,8 +37,9 @@
             text-transform: uppercase;
 
             color: #FFFFFF;
-            margin-block-end: 1vw;
             margin-block-start: 1vw;
+
+            width: 80%;
         }
 
         &__desc {
@@ -129,8 +130,10 @@
             &__title {
                 font-size: 4vw;
                 line-height: 3.9vw;
-                margin-block-end: 1.8vw;
                 margin-block-start: 1.8vw;
+
+                position: relative;
+                width: 70% !important;
             }
     
             &__desc {
@@ -196,7 +199,6 @@
             &__title {
                 font-size: 37.5px;
                 line-height: 36px;
-                margin-block-end: 15px;
                 margin-block-start: 15px;
             }
     

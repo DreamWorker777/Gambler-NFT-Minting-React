@@ -10,22 +10,24 @@ import topIcon3 from '../../assets/img/icons/topIcon3.svg';
 
 import menuIcon from '../../assets/img/icons/menu.svg';
 
+import logoText from '../../assets/img/font_svg/cyberunners-text-logo.svg';
+
 const menu = [
-    "team", "roadmap", "rarity", "about", "home"
+    "about", "rarity", "roadmap", "team"
 ];
 
 const TopLogo = () => {
     return (
         <div className="topMenu__logo">
             <img src={logo} className="topMenu__logo__img" alt="logo"></img>
-            <div className="topMenu__logo__text">CYBERUNNERS</div>
+            <img src={logoText} className="topMenu__logo__text" alt="logotext"></img>
         </div>
     )
 }
 
 const TopButtons = () => {
     const connectWallet = () => {
-        NotificationManager.info('Sorry, metamask wallet connection is currently unavailable, please comeback on drop day');
+        NotificationManager.info('Metamask Wallet connection currently unavailable! Please retry on launch date.');
     }
 
     return (

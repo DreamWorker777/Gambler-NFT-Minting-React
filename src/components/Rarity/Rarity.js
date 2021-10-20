@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 
 import './Rarity.scss';
-import tag from '../../assets/img/tags/2.png';
-import exploreTag from '../../assets/img/tags/3.png';
+import tag from '../../assets/img/tags/2.svg';
+import exploreTag from '../../assets/img/tags/3.svg';
 import back from '../../assets/img/website_art/4.webp';
+import title from '../../assets/img/font_svg/rarity-text.svg';
 
 import body1 from '../../assets/img/layers/webp/1-body-01.webp';
 import body2 from '../../assets/img/layers/webp/1-body-02.webp';
@@ -121,7 +122,7 @@ const Rarity = () => {
 
                     <div className="rarity__content__desc">
                         <div>
-                            <p className="rarity__content__desc__title">rarity</p>
+                            <img alt="title" className="rarity__content__desc__title" src={title}></img>
                             <p className="rarity__content__desc__first">The artworks are carefully crafted by utilising hand drawn traits and a generative algorithm to produce the characters of the Cyberverse.</p>
                             <p className="rarity__content__desc__second">There are 12 categories in total: Backgrounds, Bodies, Expressions, Eyes, Clothing, Stickers, Tattoos, Hair, Eyewear, Headgear, Biomods and Extras!</p>
 

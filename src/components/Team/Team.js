@@ -1,10 +1,15 @@
 import './Team.scss';
-import tag from '../../assets/img/tags/5.png';
+import tag from '../../assets/img/tags/5.svg';
 import teamImg1 from '../../assets/img/team_images/1.png';
 import teamImg2 from '../../assets/img/team_images/2.png';
-import icon1 from '../../assets/img/icons/topIcon1.svg';
-import icon2 from '../../assets/img/icons/topIcon3.svg';
-import icon3 from '../../assets/img/icons/topIcon2.svg';
+
+import instagramBlue from '../../assets/img/icons/instagram-blue.svg';
+import instagramRed from '../../assets/img/icons/instagram-red.svg';
+
+import twitterBlue from '../../assets/img/icons/twitter-blue.svg';
+import twitterRed from '../../assets/img/icons/twitter-red.svg';
+
+import title from '../../assets/img/font_svg/theteam-text.svg';
 
 export const Team = () => {
     return (
@@ -12,7 +17,7 @@ export const Team = () => {
             <div className="team__members">
                 <img alt="tag" className="team__members__tag" src={tag}></img>
                 <div className="team__members__content">
-                    <p className="team__members__content__title">THE TEAM</p>
+                    <img alt="title" className="team__members__content__title" src={title}></img>
                     <p className="team__members__content__desc">MEET THE ARTISTS BEHIND CYBERUNNERS!</p>
 
                     <div className="team__members__content__people">
@@ -22,9 +27,8 @@ export const Team = () => {
                             <p className="team__members__content__people__desc">Co-Creator, Creative Director and Project Manager</p>
 
                             <div className="socialIcons">
-                                <a href=""><img alt="icon" className="team__members__content__people__firstIcon" src={icon1}></img></a>
-                                <a href="https://twitter.com/TheHexaMan"><img alt="icon" className="team__members__content__people__firstIcon" src={icon3}></img></a>
-                                <a href="https://www.instagram.com/thehexaman"><img alt="icon" className="team__members__content__people__firstIcon" src={icon2}></img></a>
+                                <a href="https://twitter.com/TheHexaMan"><img alt="icon" className="team__members__content__people__firstIcon" src={twitterRed}></img></a>
+                                <a href="https://www.instagram.com/thehexaman"><img alt="icon" className="team__members__content__people__firstIcon" src={instagramRed}></img></a>
                             </div>
                         </div>
 
@@ -34,9 +38,8 @@ export const Team = () => {
                             <p className="team__members__content__people__desc">Co-Creator, Illustrator and Graphic Artist</p>
 
                             <div className="socialIcons">
-                                <a href=""><img alt="icon" className="team__members__content__people__secondIcon" src={icon1}></img></a>
-                                <a href="https://twitter.com/the__Mess"><img alt="icon" className="team__members__content__people__secondIcon" src={icon3}></img></a>
-                                <a href="https://www.instagram.com/kristina__kerstner"><img alt="icon" className="team__members__content__people__secondIcon" src={icon2}></img></a>
+                                <a href="https://twitter.com/the__Mess"><img alt="icon" className="team__members__content__people__secondIcon" src={twitterBlue}></img></a>
+                                <a href="https://www.instagram.com/kristina__kerstner"><img alt="icon" className="team__members__content__people__secondIcon" src={instagramBlue}></img></a>
                             </div>
                         </div>
                     </div>
