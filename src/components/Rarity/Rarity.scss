@@ -15,15 +15,17 @@
         }
 
         &__back {
-            width: 32%;
+            width: 40%;
+            overflow: hidden;
 
             img {
                 width: 100%;
+                width: 55vw;
             }
         }
 
         &__desc {
-            width: 64%;
+            width: 60%;
 
             div {
                 padding: 5vw;
@@ -245,9 +247,10 @@
             flex-wrap: wrap;
             background: #9BE7A9;
 
-            &__back {    
+            &__back {
                 img {
-                    width: 100%;
+                    // width: 100%;
+                    width: 815px;
                 }
             }
 
@@ -258,7 +261,6 @@
             }
     
             &__desc {
-                width: 64%;
     
                 div {
                     padding: 40px;

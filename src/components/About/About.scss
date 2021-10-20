@@ -79,7 +79,7 @@
 
             div {
                 width: calc(28vw);
-                height: calc(30vw);
+                height: calc(28vw);
                 background-size: cover;
             }
         }
@@ -137,7 +137,7 @@
                 justify-content: center;
     
                 div {
-                    width: calc(17vw);
+                    width: calc(18vw);
                     height: calc(18vw);
                     background-size: cover;
                 }
@@ -148,8 +148,22 @@
 
 @media (min-width: 1500px) {
     .about {
+        &__back {
+            width: 100vw;
+            transform: translate3d(0, -50%, 0);
+            top: 20vh;
+            position: relative;
+        }
+
+        &__backImage__wrapper {
+            max-height: 800px;
+            overflow: hidden;
+            position: relative;
+        }
+
         &__content {
             &__tag {
+                top: -60px;
                 padding-left: 50px;
             }
 
@@ -186,8 +200,8 @@
                 justify-content: center;
     
                 div {
-                    width: calc(12.14vw);
-                    height: calc(14vw);
+                    width: calc(13vw);
+                    height: calc(13vw);
                     background-size: cover;
                 }
             }
