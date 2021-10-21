@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-scroll'
 
 import './Rarity.scss';
 import tag from '../../assets/img/tags/2.svg';
@@ -71,7 +72,7 @@ const Explore = ({ hidden }) => {
     }
 
     return (
-        <div className={`rarity__explore ${hidden}`}>
+        <div className={`rarity__explore ${hidden}`} id="rarity__explore">
             <div className="container">
                 <img alt="tag" className="rarity__explore__tag" src={exploreTag}></img>
                 <div className="subContainer">
@@ -126,8 +127,16 @@ const Rarity = () => {
                             <p className="rarity__content__desc__first">The artworks are carefully crafted by utilising hand drawn traits and a generative algorithm to produce the characters of the Cyberverse.</p>
                             <p className="rarity__content__desc__second">There are 12 categories in total: Backgrounds, Bodies, Expressions, Eyes, Clothing, Stickers, Tattoos, Hair, Eyewear, Headgear, Biomods and Extras!</p>
 
-                            <button className="rarity__content__desc__exploreBtn" onClick={() => setShowExplore(true)}>
-                                EXPLORE
+                            <button className="rarity__content__desc__exploreBtn" >
+                                <Link
+                                    smooth={true} 
+                                    duration={500} 
+                                    spy={true}
+                                    to={ showExplore ? "rarity__explore": "roadmap" }
+                                    onClick={() => setShowExplore(true)}
+                                >
+                                    EXPLORE
+                                </Link>
                             </button>
                         </div>
                     </div>
