@@ -75,7 +75,6 @@
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                padding: 1vw 1.5vw;
                 margin-top: 3vw;
 
                 background: #2B2656;
@@ -83,6 +82,11 @@
                 &:hover, &:active {
                     background: white;
                     color: #2B2656;
+                }
+
+                a {
+                    padding: 1.5vw 2vw;
+                    font-size: 1.7vw;
                 }
             }
         }
@@ -221,10 +225,13 @@
                 }
 
                 button {
-                    font-size: 2vw;
                     margin-top: 5vw;
                     margin-bottom: 3vw;
-                    padding: 2vw 2.3vw;
+
+                    a {
+                        padding: 2vw 2.3vw;
+                        font-size: 2.5vw !important;
+                    }
                 }
             }
         }
@@ -285,10 +292,12 @@
                 }
     
                 button {
-                    font-size: 17px;
-    
-                    padding: 10px 15px;
                     margin-top: 50px;
+
+                    a {
+                        padding: 22.5px 30px;
+                        font-size: 25px;
+                    }
                 }
             }
         }
