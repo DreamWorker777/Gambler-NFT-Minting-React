@@ -183,6 +183,11 @@
                 bottom: 6vw;
             }
         }
+
+        &.hide {
+            position: absolute;
+            z-index: -1;
+        }
     }
 }
 
