@@ -8,16 +8,16 @@ import back from '../../assets/img/website_art/2.webp';
 import pic from '../../assets/img/website_art/3.webp';
 import tag from '../../assets/img/tags/1.svg';
 
-import slideImg1 from '../../assets/img/gallery/1.png';
-import slideImg2 from '../../assets/img/gallery/2.png';
-import slideImg3 from '../../assets/img/gallery/3.png';
-import slideImg4 from '../../assets/img/gallery/4.png';
-import slideImg5 from '../../assets/img/gallery/5.png';
-import slideImg6 from '../../assets/img/gallery/6.png';
-import slideImg7 from '../../assets/img/gallery/7.png';
-import slideImg8 from '../../assets/img/gallery/8.png';
-import slideImg9 from '../../assets/img/gallery/9.png';
-import slideImg10 from '../../assets/img/gallery/10.png';
+import slideImg1 from '../../assets/img/gallery/1.webp';
+import slideImg2 from '../../assets/img/gallery/2.webp';
+import slideImg3 from '../../assets/img/gallery/3.webp';
+import slideImg4 from '../../assets/img/gallery/4.webp';
+import slideImg5 from '../../assets/img/gallery/5.webp';
+import slideImg6 from '../../assets/img/gallery/6.webp';
+import slideImg7 from '../../assets/img/gallery/7.webp';
+import slideImg8 from '../../assets/img/gallery/8.webp';
+import slideImg9 from '../../assets/img/gallery/9.webp';
+import slideImg10 from '../../assets/img/gallery/10.webp';
 
 const slideImages = [
     slideImg1, slideImg2, slideImg3, slideImg4, slideImg5, slideImg6, slideImg7, slideImg8, slideImg9, slideImg10

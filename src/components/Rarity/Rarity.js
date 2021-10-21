@@ -142,11 +142,7 @@ const Rarity = () => {
                     </div>
                 </div>
             </div>
-            {
-                showExplore ? (
-                    <Explore hidden={''} />
-                ) : <Explore hidden={'hidden'} />
-            }
+            <Explore hidden={ showExplore ? '' : 'hide' } />
 
         </div>
     )

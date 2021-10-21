@@ -120,7 +120,6 @@ export const RoadMap = () => {
         <div className="roadmap" id="roadmap">
             <div className="roadmap__content__wrapper">
                 <div className="roadmap__content">
-                    {/* <img alt="tag" className="roadmap__content__tag" src={tag}></img> */}
                     <div className="roadmap__content__desc">
                         <div>
                             <img alt="title" className="roadmap__content__desc__title" src={title}></img>

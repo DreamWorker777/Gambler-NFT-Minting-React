@@ -1,7 +1,7 @@
 import './Team.scss';
 import tag from '../../assets/img/tags/5.svg';
-import teamImg1 from '../../assets/img/team_images/1.png';
-import teamImg2 from '../../assets/img/team_images/2.png';
+import teamImg1 from '../../assets/img/team_images/1.webp';
+import teamImg2 from '../../assets/img/team_images/2.webp';
 
 import instagramBlue from '../../assets/img/icons/instagram-blue.svg';
 import instagramRed from '../../assets/img/icons/instagram-red.svg';
