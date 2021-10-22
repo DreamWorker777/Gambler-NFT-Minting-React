@@ -15,25 +15,25 @@ const Main = () => {
 }
 
 const DateShow = () => {
-    const getMonth = () => {
-        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        const month = new Date().getMonth();
-        return months[month];
-    }
+    // const getMonth = () => {
+    //     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    //     const month = new Date().getMonth();
+    //     return months[month];
+    // }
 
-    const getDate = () => {
-        const date = new Date().getDate();
-        if( date < 10 )
-            return '0' + date;
+    // const getDate = () => {
+    //     const date = new Date().getDate();
+    //     if( date < 10 )
+    //         return '0' + date;
         
-        return date;
-    }
+    //     return date;
+    // }
 
-    const getYear = () => {
-        const year = new Date().getFullYear();
+    // const getYear = () => {
+    //     const year = new Date().getFullYear();
 
-        return year % 100;
-    }
+    //     return year % 100;
+    // }
 
     return (
         <div className="intro__dateWrapper">

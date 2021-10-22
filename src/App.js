@@ -1,6 +1,6 @@
 import {NotificationContainer} from 'react-notifications';
 import OnImagesLoaded from 'react-on-images-loaded';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -47,7 +47,7 @@ function App() {
 			{ showLoading ? <Loading isLoading={isLoading}/> : null}
 
 			<OnImagesLoaded
-				onLoaded={() => { hideLoading() }}
+				onLoaded={() => { hideLoading(); }}
 			>			
 				<div className="App">
 					<TopMenu />
