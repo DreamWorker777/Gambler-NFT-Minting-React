@@ -1,6 +1,6 @@
 import './Join.scss';
 import icon3 from '../../assets/img/icons/discord_icon.svg';
-import back from '../../assets/img/website_art/6.webp';
+import back from '../../assets/img/website_art/6.png';
 import title from '../../assets/img/font_svg/become-a-cyberunner-text.svg';
 
 export const Join = () => {

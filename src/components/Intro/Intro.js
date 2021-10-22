@@ -1,6 +1,6 @@
 import './Intro.scss';
 
-import character from '../../assets/img/website_art/1.webp';
+import character from '../../assets/img/website_art/1.png';
 import textFilled from '../../assets/img/font_svg/cyberunners-text-filled.svg';
 import textInline from '../../assets/img/font_svg/cyberunners-text-inline.svg';
 

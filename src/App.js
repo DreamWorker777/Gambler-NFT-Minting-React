@@ -1,4 +1,5 @@
 import {NotificationContainer} from 'react-notifications';
+import OnImagesLoaded from 'react-on-images-loaded';
 import React, { useState, useEffect } from 'react';
 import {
 	BrowserRouter as Router,
@@ -33,32 +34,34 @@ function App() {
 	const [isLoading, setIsLoading] = useState(true);
 	const [showLoading, setShowLoading] = useState(true);
 
-	useEffect(() => {
-		setTimeout(() => {
-			setIsLoading(false);
+	const hideLoading = () => {
+		setIsLoading(false);
 			
-			setTimeout(() => {
-				setShowLoading(false);
-			}, 1000)
-		}, 1000);
-	})
+		setTimeout(() => {
+			setShowLoading(false);
+		}, 1000)
+	}
 
 	return (
 		<Router>
 			{ showLoading ? <Loading isLoading={isLoading}/> : null}
 
-			<div className="App">
-				<TopMenu />
+			<OnImagesLoaded
+				onLoaded={() => { hideLoading() }}
+			>			
+				<div className="App">
+					<TopMenu />
 
-				<Switch>
-					<Route exact path='/' component={Home} />
-					<Route path='/mint' component={Mint} />
-				</Switch>
+					<Switch>
+						<Route exact path='/' component={Home} />
+						<Route path='/mint' component={Mint} />
+					</Switch>
 
-				<Join />
-				<Footer />
-				<NotificationContainer />
-			</div>
+					<Join />
+					<Footer />
+					<NotificationContainer />
+				</div>
+			</OnImagesLoaded>
 
 		</Router>
 	);
