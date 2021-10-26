@@ -6,14 +6,17 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "craco-plugin-scoped-css": "^1.1.1",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-notifications": "^1.7.2",
     "react-on-images-loaded": "^2.2.5",
     "react-router-dom": "^5.3.0",
+    "react-scoped-css": "^0.0.23",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
+    "react-select": "^5.1.0",
     "react-slideshow-image": "^3.5.1",
     "sass": "^1.42.1",
     "web-vitals": "^1.0.1"
@@ -41,5 +44,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-react-scoped-css": "^1.1.1",
+    "scoped-css-loader": "^1.0.0"
   }
 }

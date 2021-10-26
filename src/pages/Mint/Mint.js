@@ -1,18 +1,23 @@
 import {
-	// BrowserRouter as Router,
 	Switch,
 	Route,
-  } from "react-router-dom";
-
-// import NavBar from '../../components/Navigation/nav';
+} from "react-router-dom";
 
 import Create from '../../components/Mint/Create/Create';
+import Confirmation from "../../components/Mint/Confirmation/Confirmation";
+
+import './Mint.scss';
 
 export const Mint = () => {
     return (
-        <Switch>
-            <Route path='/' component={Create} />
-        </Switch>
+        <div className="container">
+            <div className="mint">
+                <Switch>
+                    <Route exact path='/mint/create' component={Create} />
+                    <Route exact path='/mint/confirm' component={Confirmation} />
+                </Switch>
+            </div>
+        </div>
     )
 }
 

@@ -1,0 +1,292 @@
+.mint {
+    &__confirmation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &__backHome {
+            justify-content: center;
+        }
+
+        &__main {
+            width: 60%;
+            position: relative;
+
+            &__title {
+                margin: 50px 0;
+
+                img {
+                    width: 90%;
+                    margin-bottom: 50px;
+                }
+
+                p {
+                    font-family: Bank Sans EF CY;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 28px;
+
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+
+                    margin-block-start: 0;
+                }
+            }
+        }
+
+        &__timer {
+            color: #000000;
+            width: 100vw;
+            background: #1CD2F9;
+            margin-bottom: -150px;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                padding: 100px;
+            }
+
+            &__tag {
+                position: absolute;
+
+                transform: translate3d(0, -50%, 0);
+                right: 120px;
+                top: 0;
+                img {
+                    width: 150px;
+                }
+            }
+
+            &__desc {
+                font-family: Bank Sans EF CY;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 28px;
+
+                text-align: center;
+                text-transform: uppercase;
+
+                color: #000000;
+
+                padding-bottom: 20px;
+            }
+
+            &__wrapper {
+                display: flex;
+                justify-content: center;
+                width: 47%;
+
+                padding: 40px 0;
+                border: 2px solid #000000;
+            }
+
+            &__value {
+                display: flex;
+                flex-direction: column;
+
+                &__desc {
+                    font-family: Bank Sans EF CY;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 5px;
+
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+                &__number {
+                    font-family: Cygnito Mono;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 143px;
+    
+                    letter-spacing: 0;
+
+                    margin-block-start: 0em;
+                    margin-block-end: 0em;
+                    line-height: 100px;
+                }
+            }
+
+            &__split {
+                p {
+                    font-family: Cygnito Mono;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 77px;
+                    line-height: 115px;
+
+                    color: #000000;
+
+                    margin-block-start: 0em;
+                    margin-block-end: 0em;
+                    line-height: 100px;
+
+                    position: relative;
+                    top: 34px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .mint {
+        &__confirmation {
+            &__main {
+                width: 60%;
+    
+                &__title {
+                    margin: 3.1vw 0;
+    
+                    img {
+                        width: 90%;
+                        margin-bottom: 3.1vw;
+                    }
+    
+                    p {
+                        font-size: 1.3vw;
+                        line-height: 1.9vw;
+                    }
+                }
+            }
+    
+            &__timer {
+                margin-bottom: -10vw;
+    
+                .container {
+                    padding: 7vw;
+                }
+
+                &__tag {
+                    right: 8vw;
+
+                    img {
+                        width: 10vw;
+                    }
+                }
+    
+                &__desc {
+                    font-size: 1.6vw;
+                    line-height: 1.9vw;
+
+                    padding-bottom: 1.3vw;
+                }
+    
+                &__wrapper {
+                    width: 47%;
+    
+                    padding: 3.1vw;
+                }
+    
+                &__value {
+                    &__desc {
+                        font-size: 1.3vw;
+                        line-height: 0.33vw;
+                    }
+    
+                    &__number {
+                        font-size: 9.7vw;
+                        line-height: 7vw;
+                    }
+                }
+    
+                &__split {
+                    p {
+                        font-size: 5.1vw;
+                        line-height: 7vw;
+
+                        top: 2.2vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .mint {
+        &__confirmation {
+            &__main {
+                width: 90%;
+    
+                &__title {
+                    margin: 3.1vw 0;
+    
+                    img {
+                        width: 90%;
+                        margin-bottom: 5.1vw;
+                    }
+    
+                    p {
+                        font-size: 3.5vw;
+                        line-height: 5.5vw;
+
+                        margin-block-start: 1.5em;
+                        margin-block-end: 1.5em;
+                    }
+                }
+            }
+    
+            &__timer {
+                margin-bottom: -10vw;
+    
+                .container {
+                    padding: 12vw 7vw;
+                    padding-top: 9vw;
+                }
+
+                &__tag {
+                    right: 8vw;
+
+                    img {
+                        width: 15vw;
+                    }
+                }
+    
+                &__desc {
+                    font-size: 3.5vw;
+                    line-height: 4vw;
+
+                    padding-bottom: 3vw;
+                }
+    
+                &__wrapper {
+                    width: 80%;
+    
+                    padding: 3.1vw;
+                }
+    
+                &__value {
+                    &__desc {
+                        font-size: 2.5vw;
+                        line-height: 0.9vw;
+                    }
+    
+                    &__number {
+                        font-size: 16vw;
+                        line-height: 13vw;
+                    }
+                }
+    
+                &__split {
+                    p {
+                        font-size: 10vw;
+                        line-height: 10vw;
+
+                        top: 6.2vw;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -10,7 +10,7 @@
        url('./assets/fonts/Cygnito Mono.otf') format('truetype'), /* Super Modern Browsers */
 }
 
-@font-face {  
+@font-face {
   font-family: 'Bank Sans EF CY';
   font-weight: 300;
   src: local('Bank Sans EF CY'),
@@ -36,6 +36,11 @@
   src: url('./assets/fonts/PhoskaDangers-Regular.ttf') format('truetype'); /* Super Modern Browsers */
   font-weight: normal;
   font-style: normal;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: unset;
 }
 
 .App {

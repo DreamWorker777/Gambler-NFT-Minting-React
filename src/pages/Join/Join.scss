@@ -181,7 +181,8 @@
 
         &__back {
             position: relative;
-            top: -30vh;
+            transform: translate3d(0, -50%, 0);
+            top: 26vw;
         }
 
         &__popup {

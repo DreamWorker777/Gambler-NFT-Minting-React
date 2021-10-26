@@ -1,0 +1,334 @@
+.mint {
+    &__create {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        &__main {
+            width: 40%;
+            position: relative;
+
+            &__title {
+                margin: 50px 0;
+
+                img {
+                    width: 90%;
+                }
+
+                p {
+                    font-family: Bank Sans EF CY;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 28px;
+
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+
+                    margin-block-start: 0;
+                }
+            }
+
+            &__select {
+                margin-bottom: 50px;
+
+                font-family: Cygnito Mono;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 27px;
+
+                p {
+                    font-family: Bank Sans EF CY;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 28px;
+
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+                }
+
+                &__control {
+                    background-color: #191919 !important;
+                    color: #828282 !important;
+                    border-color: #828282 !important;
+                    border-radius: 0 !important;
+                    padding: 8px !important;
+                    box-shadow: unset !important;
+                }
+
+                &__indicator-separator {
+                    display: none;
+                }
+
+                &__indicator {
+                    padding: 0 !important;
+                    svg {
+                        width: 30px !important;
+                        height: 30px !important;
+                    }
+                }
+
+                &__single-value {
+                    color: #828282 !important;
+                }
+
+                &__menu {
+                    background-color: #191919 !important;
+                    border-radius: 0 !important;
+                    position: relative !important;
+                    color: #828282 !important;
+                    font-size: 18px !important;
+                    line-height: 27px !important;
+                }
+
+                &__option {
+                    &--is-selected {
+                        background-color: rgba(208, 7, 37, 0.05) !important;
+                        color: white !important;
+                    }
+                }
+            }
+
+            &__buttons {
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    font-family: Bank Sans EF CY;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+
+                    padding: 20px 15px;
+
+                    img {
+                        width: 30px;
+                        margin-right: 10px;
+                    }
+                }
+                
+                .discord {
+                    background: #5865F2;
+                }
+
+                .twitter {
+                    background: #1DA1F3;
+                }
+
+                .splitter {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 10px 0;
+
+                    &__line {
+                        width: 45%;
+                        margin: 0;
+                        border-top: 1px solid white;
+                    }
+
+                    &__text {
+                        font-family: Bank Sans EF CY;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 28px;
+
+                        text-transform: uppercase;
+
+                        color: #FFFFFF;
+
+                        margin: 0 1em;
+                    }
+                }
+            }
+        }
+
+        &__pic {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+
+            &__wrapper {
+                width: 80%;
+                position: relative;
+            }
+            
+            &__tag {
+                position: absolute;
+                transform: translate3d(-50%, -50%, 0);
+                left: 5%;
+                top: 5%;
+                width: 150px;
+            }
+
+            &__main {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .mint {
+        &__create {
+            &__main {
+                &__title {
+                    margin: 3.1vw 0;
+
+                    p {
+                        font-size: 1.3vw;
+                        line-height: 2vw;
+                    }
+                }
+
+                &__select {
+                    margin-bottom: 3.1vw;
+    
+                    font-size: 1.2vw;
+                    line-height: 2vw;
+
+                    p {
+                        font-size: 1.2vw;
+                        line-height: 2vw;
+                    }
+
+                    &__control {
+                        padding: 0.5vw !important;
+                    }
+
+                    &__indicator {
+                        svg {
+                            width: 2vw !important;
+                            height: 2vw !important;
+                        }
+                    }
+
+                    &__menu {
+                        font-size: 1.2vw !important;
+                        line-height: 2vw !important;
+                    }
+                }
+
+                &__buttons {
+                    a {
+                        font-size: 1.2vw;
+                        line-height: 1.3vw;
+        
+                        padding: 1.3vw 1vw;
+        
+                        img {
+                            width: 2vw;
+                            margin-right: 0.7vw;
+                        }
+                    }
+        
+                    .splitter {
+                        margin: 0.7vw 0;
+        
+                        &__text {
+                            font-size: 0.8vw;
+                            line-height: 2vw;
+                        }
+                    }
+                }
+            }
+
+            &__pic {
+                &__tag {
+                    width: 10vw;
+                }
+            }
+        }        
+    }
+}
+
+@media (max-width: 992px) {
+    .mint {
+        &__create {
+            &__main {
+                width: 100%;
+
+                &__title {
+                    margin: 50px 0;
+                    text-align: center;
+
+                    p {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+
+                &__select {
+                    margin-bottom: 50px;
+    
+                    font-size: 18px;
+                    line-height: 27px;
+
+                    p {
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+
+                    &__control {
+                        padding: 8px !important;
+                    }
+
+                    &__indicator {
+                        svg {
+                            width: 30px !important;
+                            height: 30px !important;
+                        }
+                    }
+
+                    &__menu {
+                        font-size: 20px !important;
+                        line-height: 30px !important;
+                    }
+                }
+
+                &__buttons {
+                    a {
+                        font-size: 18px;
+                        line-height: 20px;
+        
+                        padding: 20px 15px;
+        
+                        img {
+                            width: 30px;
+                            margin-right: 10px;
+                        }
+                    }
+        
+                    .splitter {
+                        margin: 10px 0;
+        
+                        &__text {
+                            font-size: 12px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+
+            &__pic {
+                display: none;
+
+                &__tag {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

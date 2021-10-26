@@ -1,0 +1,44 @@
+.mint {
+    padding: 75px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    &__backHome {
+        display: flex;
+        a {
+            font-family: Cygnito Mono;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 28px;
+    
+            text-transform: uppercase;
+    
+            color: #FFFFFF;
+
+            text-decoration: unset;
+
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .mint {
+        padding: 5vw;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .mint {
+        padding: 6.5vw 2.6;
+    }
+}
