@@ -1,0 +1,279 @@
+.mint {
+    &__success {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        &__main {
+            width: 42%;
+            position: relative;
+
+            &__title {
+                margin: 50px 0;
+
+                img {
+                    width: 90%;
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    font-family: Bank Sans EF CY;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 28px;
+
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+
+                    margin-block-start: 0;
+
+                    a {
+                        color: #1CD2F9;
+                    }
+                }
+            }
+
+            &__people {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &__wrapper {
+                    width: 50%;
+                    position: relative;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img {
+                        width: 90%;
+                    }
+
+                    p {
+                        font-family: Bank Sans EF CY;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 28px;
+
+                        text-transform: uppercase;
+
+                        color: #FFFFFF;
+
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        &__pic {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &__wrapper {
+                width: 80%;
+                position: relative;
+            }
+            
+            &__tag {
+                position: absolute;
+                transform: translate3d(-50%, -50%, 0);
+                left: 5%;
+                top: 5%;
+                width: 150px;
+            }
+
+            &__main {
+                width: 100%;
+            }
+
+            &__ballance {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+
+                &__icon {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 20px;
+
+                    img {
+                        width: 60px;
+                    }
+                }
+
+                &__detail {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    &__number {
+                        font-family: Cygnito Mono;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 48px;
+                        line-height: 72px;
+                        letter-spacing: -0.135em;
+                        
+                        /* WHITTE */
+                        
+                        color: #FFFFFF;
+                    }
+
+                    &__info {
+                        font-family: Bank Sans EF CY;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 15px;
+                        line-height: 28px;
+                        /* identical to box height, or 187% */
+                        
+                        text-transform: uppercase;
+                        
+                        /* Gray 5 */
+                        
+                        color: #E0E0E0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .mint {
+        &__success {
+            &__main {
+                &__title {
+                    margin: 3.3vw 0;
+    
+                    img {
+                        margin-bottom: 2vw;
+                    }
+    
+                    p {
+                        font-size: 1.1vw;
+                        line-height: 1.9vw;
+                    }
+                }
+                &__people {
+                    &__wrapper {
+                        p {
+                            font-size: 1.1vw;
+                            line-height: 1.9vw;
+                        }
+                    }
+                }
+            }
+    
+            &__pic {
+                &__tag {
+                    width: 10vw;
+                }
+    
+                &__ballance {
+                    margin-top: 1.3vw;
+    
+                    &__icon {
+                        margin-right: 1.3vw;
+    
+                        img {
+                            width: 4vw;
+                        }
+                    }
+    
+                    &__detail {
+                        &__number {
+                            font-size: 3.1vw;
+                            line-height: 4.8vw;
+                        }
+    
+                        &__info {
+                            font-size: 1vw;
+                            line-height: 1.9vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .mint {
+        &__success {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &__main {
+                width: 90%;
+                text-align: center;
+
+                &__title {
+                    margin: 6.6vw 0;
+                    text-align: center;
+    
+                    img {
+                        width: 100%;
+                        margin-bottom: 4vw;
+                    }
+    
+                    p {
+                        font-size: 3vw;
+                        line-height: 4.8vw;
+                    }
+                }
+                &__people {
+                    &__wrapper {
+                        p {
+                            font-size: 2.5vw;
+                        }
+                    }
+                }
+            }
+    
+            &__pic {
+                margin-top: 15vw;
+                width: 90%;
+
+                &__wrapper {
+                    display: none;
+                }
+    
+                &__ballance {
+                    width: 100%;
+                    margin-top: 2.3vw;
+    
+                    &__icon {
+                        margin-right: 2.3vw;
+    
+                        img {
+                            width: 8vw;
+                        }
+                    }
+    
+                    &__detail {
+                        &__number {
+                            font-size: 7vw;
+                            line-height: 8vw;
+                        }
+    
+                        &__info {
+                            font-size: 2.1vw;
+                            line-height: 2.9vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
