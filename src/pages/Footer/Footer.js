@@ -1,13 +1,27 @@
 import './Footer.scss';
 import logo from '../../assets/img/icons/logo.svg';
 import { Link } from 'react-scroll'
+import { useLocation, useHistory } from 'react-router-dom'
+import store from '../../store/store';
 
 import logoText from '../../assets/img/font_svg/cyberunners-text-logo.svg';
 
 export const Footer = () => {
+    const location = useLocation();
+    const history = useHistory();
+
+    const updateScrollTo = store(state => state.updatePendingScroll);
+
     const menu = [
         "about", "rarity", "roadmap", "team",
     ];
+
+    const goToScroll = (scrollTo) => {
+        if( location.pathname != '/' ) {
+            updateScrollTo( scrollTo );
+            history.push('/');
+        }
+    }
 
     return (
         <div className="footer container">
@@ -28,6 +42,7 @@ export const Footer = () => {
                                 duration={500} 
                                 spy={true} 
                                 to={ item }
+                                onClick={() => { goToScroll(item) }}
                             >
                                 { item.toUpperCase() }
                             </Link>
