@@ -3,6 +3,7 @@ import {
 } from "react-router-dom";
 
 import './MintNow.scss';
+import Select from 'react-select';
 
 import arrowLeft from '../../../assets/img/icons/arrow_left.svg';
 
@@ -13,6 +14,13 @@ import pic from '../../../assets/img/mint/mint_avatar.png';
 import skeleton from '../../../assets/img/icons/skeleton_white.svg';
 
 export const MintNow = () => {
+    const options = [
+        { value: '1', label: '1 - 0.06 ETH' },
+        { value: '2', label: '2 - 0.12 ETH' },
+        { value: '3', label: '3 - 0.18 ETH' },
+        { value: '4', label: '4 - 0.24 ETH' }
+    ];
+
     return (
         <div>
             <div className="mint__backHome">
@@ -29,8 +37,16 @@ export const MintNow = () => {
                         <p>YOU’VE BEEN SELECTED TO MINT YOUR CYBERUNNERS NFT</p>
                     </div>
 
+                    <div className="mint__create__main__select">
+                        <Select 
+                            defaultMenuIsOpen = {false}
+                            defaultValue={options[0]}
+                            options={options} 
+                            classNamePrefix="mint__create__main__select" />
+                    </div>
+
                     <a href="#javascript;" className="mint__mintNow__main__button">
-                        MINT MY CYBERUNNERS - 0.35 ETH
+                        MINT MY CYBERUNNERS
                     </a>
 
                     <div className="mint__mintNow__main__timer">

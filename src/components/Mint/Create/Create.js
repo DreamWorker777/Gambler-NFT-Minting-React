@@ -16,10 +16,10 @@ import arrowLeft from '../../../assets/img/icons/arrow_left.svg';
 
 export const Create = () => {
     const options = [
-        { value: '0', label: '1 - 0.2 ETH' },
-        { value: '1', label: '2 - 0.4 ETH' },
-        { value: '2', label: '2 - 0.6 ETH' },
-        { value: '3', label: '2 - 0.8 ETH' }
+        { value: '1', label: '1 - 0.06 ETH' },
+        { value: '2', label: '2 - 0.12 ETH' },
+        { value: '3', label: '3 - 0.18 ETH' },
+        { value: '4', label: '4 - 0.24 ETH' }
     ];
 
     return (

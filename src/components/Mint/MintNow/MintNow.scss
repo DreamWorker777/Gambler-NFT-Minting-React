@@ -34,6 +34,9 @@
             &__button {
                 position: relative;
 
+                display: flex;
+                justify-content: center;
+
                 font-family: Bank Sans EF CY;
                 font-style: normal;
                 font-weight: 300;
